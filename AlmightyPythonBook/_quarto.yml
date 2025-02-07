@@ -1,0 +1,36 @@
+project:
+  type: book
+
+book:
+  title: "AlmightyPythonBook"
+  author: "Guy Tordjman"
+  date: "07/Feb/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: "Part 1 - Getting Started"
+      chapters:
+        - chapter1.qmd
+        - chapter2.qmd
+        - chapter3.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+    include-in-header:
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body:
+      text: |
+        \printindex
+  epub:
+    cover-image: cover.png

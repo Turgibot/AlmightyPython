@@ -1,0 +1,9 @@
+# Chapter3 - Basic Operators and Input
+
+## Arithmetic operators (+, -, *, /)
+## Comparison and logical operators
+## Taking user input with input()
+## Project 1: Simple Temperature Converter
+## Convert between Celsius, Fahrenheit, and Kelvin
+## Use input from the user and perform arithmetic operations
+## Format and display the result

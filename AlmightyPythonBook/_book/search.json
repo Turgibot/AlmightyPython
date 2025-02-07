@@ -1,0 +1,196 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AlmightyPythonBook",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\nMarkdown allows you to write using an easy-to-read, easy-to-write plain text format.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html",
+    "href": "chapter1.html",
+    "title": "2  Chapter 1 - Introduction to Python",
+    "section": "",
+    "text": "2.1 What is Python? And Why Even Bother Learning It Now (In the AI Era)?\nWhen you go and look for a formal definition, you’ll probably see something like:\n“Python is a general-purpose, high-level, interpreted programming language created by Guido van Rossum and first released in 1991. It is known for its simplicity and readability, making it a great choice for beginners as well as experienced developers.”\nWell, if you’re new to programming, this definition probably didn’t tell you much. Since this book is intended for readers at all programming levels, we will break down each new term in a simple and clear way. Sometimes, if necessary, we’ll explain things more than once—because understanding the basics well is key to mastering Python. Let’s go over some of the important keywords in this definition in a way that actually makes sense:\nLanguage: Python is a programming language because it gives you a way to communicate with computers. You write Python code to tell the computer what to do, just like you’d tell a friend what to do using words.\nGeneral-purpose: Python is a general-purpose language, meaning you can use it for pretty much anything. Whether you want to build a website, analyze data, make games, automate tasks, or even explore artificial intelligence, Python (and this book) has got you covered.\nHigh-level: Python is called a high-level language because it’s designed to be easy for humans to read and write. Unlike low-level languages that deal directly with how the computer works, Python allows you to focus on solving problems without worrying about technical details like memory management. This makes coding much simpler and more beginner-friendly.\nThis is actually a good place to have our first glance at some code. Let’s say you would like to write a program that interacts with a user by asking for its name.\nIn python as it is a High-level language this can be a simple one liner code:\nNow lets see what the same program looks like when it is implemented in C which is a Low-level language :\nNote how long and much more complicated it is! The main reason for this extra lines of code is that a low-level language gives us more control over hardware and system resources, hence it requires you - the programmer, to also think about memory management, data types, explicit error handling, and more.\nPython as a High-Level language is designed to abstract away most of the complexities of dealing with the machine or hardware. You can focus on writing logic, rather than worrying about memory management, compilation, or system-specific details. The language is forgiving and lets you focus on what you want to achieve without dealing with low-level operations.\nInterpreted: Python is an interpreted language, meaning the computer reads and runs your code one step at a time instead of processing everything at once before running it. This makes testing and debugging easier but can sometimes make Python a bit slower than languages that compile everything first.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1 - Introduction to Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#what-is-python-and-why-even-bother-learning-it-now-in-the-ai-era",
+    "href": "chapter1.html#what-is-python-and-why-even-bother-learning-it-now-in-the-ai-era",
+    "title": "2  Chapter 1 - Introduction to Python",
+    "section": "",
+    "text": "name = input(\"Enter your name: \")\n\n\n#include &lt;stdio.h&gt;\n\nint main() {\n    char name[100];  // Allocate memory for the name\n\n    // Get user input\n    printf(\"Enter your name: \");\n    scanf(\"%99s\", name);  // Caution with buffer overflow!\n    \n    return 0;\n}",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1 - Introduction to Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#why-learn-python-now-the-ai-connection",
+    "href": "chapter1.html#why-learn-python-now-the-ai-connection",
+    "title": "2  Chapter 1 - Introduction to Python",
+    "section": "2.2 Why Learn Python Now? (The AI Connection)",
+    "text": "2.2 Why Learn Python Now? (The AI Connection)\nWe’re living in the AI era, where artificial intelligence is transforming industries at an unprecedented pace. From self-driving cars to chat bots, AI is everywhere—and Python is at the heart of it all.\nPython is the go-to language for AI and machine learning because of its vast ecosystem of tools (libraries), such as TensorFlow, PyTorch, and Scikit-learn (no worries we will learn about libraries in the next lessons). These tools make it easier to build intelligent systems without having to write complex code from scratch.\nBut AI isn’t the only reason to learn Python. Python’s simplicity, versatility, and beginner-friendly nature make it a perfect starting point for anyone who wants to step into the world of programming, whether your goal is to get into AI, web development, automation, or just solve everyday problems with code.\nIn the next section, we’ll explore exactly why Python is considered one of the most beginner-friendly programming languages—and why it’s often recommended as the first language to learn.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1 - Introduction to Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#why-is-python-beginner-friendly",
+    "href": "chapter1.html#why-is-python-beginner-friendly",
+    "title": "2  Chapter 1 - Introduction to Python",
+    "section": "2.3 Why is Python Beginner-Friendly?",
+    "text": "2.3 Why is Python Beginner-Friendly?\nSimple and Clear Syntax Python’s syntax is often described as “elegant” because of how clean and straightforward it is. If you’re just starting out with programming, Python lets you focus on learning core programming concepts, such as variables, loops, and functions, without getting bogged down by complex syntax rules. For example, here’s how you would write a program that print “Hello, World!” to the screen in Python:\n\nprint(\"Hello, World!\")\n\nHello, World!\n\n\nCompared to other High-level languages like C++ or Java, where you’d have to write more boilerplate code, Python’s version is minimal, allowing you to start writing meaningful code right away.\nReadable Code Python places a strong emphasis on code readability. Its use of indentation (rather than curly braces in many other languages) to define code blocks makes Python programs visually cleaner and easier to follow. This structure makes Python ideal for beginners because it encourages the creation of clean and well-organized code, which is key to developing good programming habits early on.\nDynamic Typing Python is dynamically typed, which means you don’t need to specify the type of variable (like an integer or string) when you declare it. You can directly assign a value to a variable, and Python will figure out the type for you. For example:\n\nx = 5           # x is automatically an integer\nname = \"Alice\"  # name is automatically a string\n\nThis is different from languages like Java or C++, where you have to explicitly define the type of each variable. Dynamic typing makes Python more flexible and allows you to focus on solving problems rather than worrying about types.\nLarge, Supportive Community Python has one of the largest and most active programming communities in the world. Whether you need help troubleshooting an issue or want to learn about the latest Python libraries, there are countless forums, tutorials, and documentation available to help you. The Python community is known for being friendly and welcoming to newcomers, and you’ll find plenty of resources to guide you every step of the way as you start learning.\nExtensive Libraries and Frameworks Another reason Python is beginner-friendly is because of its vast selection of libraries and frameworks. These pre-built tools allow you to avoid reinventing the wheel and instead focus on building your applications faster. For example, if you want to build a website, you can use frameworks like Django or Flask. If you’re interested in data science, there are powerful libraries like Pandas, NumPy, and Matplotlib to help you manipulate and visualize data. These libraries are designed to be easy to use and can dramatically speed up your development process.\nCross-Platform Compatibility Python is a cross-platform language, meaning you can run your Python code on any major operating system, such as Windows, macOS, and Linux, without having to make any changes. This makes Python a versatile choice for developers who want to build applications that can work across multiple platforms.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1 - Introduction to Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html",
+    "href": "chapter2.html",
+    "title": "3  Chapter2 - Python Syntax and Variables",
+    "section": "",
+    "text": "3.1 Data types: String, Integer, Float, Boolean",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter2 - Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#variables-and-assignment",
+    "href": "chapter2.html#variables-and-assignment",
+    "title": "3  Chapter2 - Python Syntax and Variables",
+    "section": "3.2 Variables and assignment",
+    "text": "3.2 Variables and assignment",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter2 - Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#type-conversions-int-float-str",
+    "href": "chapter2.html#type-conversions-int-float-str",
+    "title": "3  Chapter2 - Python Syntax and Variables",
+    "section": "3.3 Type conversions (int(), float(), str())",
+    "text": "3.3 Type conversions (int(), float(), str())",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter2 - Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html",
+    "href": "chapter3.html",
+    "title": "4  Chapter3 - Basic Operators and Input",
+    "section": "",
+    "text": "4.1 Arithmetic operators (+, -, *, /)",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#comparison-and-logical-operators",
+    "href": "chapter3.html#comparison-and-logical-operators",
+    "title": "4  Chapter3 - Basic Operators and Input",
+    "section": "4.2 Comparison and logical operators",
+    "text": "4.2 Comparison and logical operators",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#taking-user-input-with-input",
+    "href": "chapter3.html#taking-user-input-with-input",
+    "title": "4  Chapter3 - Basic Operators and Input",
+    "section": "4.3 Taking user input with input()",
+    "text": "4.3 Taking user input with input()",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#project-1-simple-temperature-converter",
+    "href": "chapter3.html#project-1-simple-temperature-converter",
+    "title": "4  Chapter3 - Basic Operators and Input",
+    "section": "4.4 Project 1: Simple Temperature Converter",
+    "text": "4.4 Project 1: Simple Temperature Converter",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#convert-between-celsius-fahrenheit-and-kelvin",
+    "href": "chapter3.html#convert-between-celsius-fahrenheit-and-kelvin",
+    "title": "4  Chapter3 - Basic Operators and Input",
+    "section": "4.5 Convert between Celsius, Fahrenheit, and Kelvin",
+    "text": "4.5 Convert between Celsius, Fahrenheit, and Kelvin",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#use-input-from-the-user-and-perform-arithmetic-operations",
+    "href": "chapter3.html#use-input-from-the-user-and-perform-arithmetic-operations",
+    "title": "4  Chapter3 - Basic Operators and Input",
+    "section": "4.6 Use input from the user and perform arithmetic operations",
+    "text": "4.6 Use input from the user and perform arithmetic operations",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#format-and-display-the-result",
+    "href": "chapter3.html#format-and-display-the-result",
+    "title": "4  Chapter3 - Basic Operators and Input",
+    "section": "4.7 Format and display the result",
+    "text": "4.7 Format and display the result",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "5  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
