@@ -1,0 +1,5 @@
+# Python Syntax and Variables
+
+## Data types: String, Integer, Float, Boolean
+## Variables and assignment
+## Type conversions (int(), float(), str())

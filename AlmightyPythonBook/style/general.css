@@ -1,0 +1,22 @@
+.console {
+  background-color: #2d2d2d;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.console .prompt {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.console .command {
+  color: #ffffff;
+}

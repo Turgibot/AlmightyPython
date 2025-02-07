@@ -1,5 +1,59 @@
 # Introduction
 
-This is a book created from markdown and executable code.
+
+Welcome to **Almighty Python: Master Python by Building Real Applications**, your ultimate guide to becoming a professional Python developer! Whether you're taking your first steps into the world of coding or you're an experienced developer looking to level up your Python skills, this book is designed for you.
+
+In today’s world, Python is everywhere. From powering the biggest tech giants to enabling groundbreaking innovations in artificial intelligence (AI), web development, data science, and automation—it’s no surprise that Python has become one of the most popular and sought-after programming languages. This book is your companion on a journey to master Python while building practical, real-world applications along the way.
+
+---
+
+## Why This Book?
+
+Learning to code can feel overwhelming at first. There are countless tutorials, courses, and articles, each offering bits and pieces of knowledge. What makes this book different? It’s simple: **you’ll learn by building**. We won’t just throw theory at you—we’ll guide you through creating a range of real applications, starting from basic command-line tools to full-fledged web apps and machine learning projects.
+
+By the time you reach the final chapters, you won’t just "know Python"; you’ll have the skills and confidence to build your own applications and solve real-world problems with code.
+
+---
+
+## Who Is This Book For?
+
+- **Absolute Beginners**: If you’ve never written a line of code, don’t worry. This book will ease you into programming concepts, explaining everything in plain, simple language.  
+- **Intermediate Developers**: If you’ve dabbled in Python before, you’ll find plenty of new concepts, advanced techniques, and hands-on projects that will push your skills to the next level.  
+- **Future Python Professionals**: This book will help you build the foundation for a successful career as a Python developer by covering everything from Python basics to advanced topics like object-oriented programming, web development, databases, and machine learning.  
+
+---
+
+## What You’ll Learn
+
+Here’s a glimpse of what you’ll build and learn in this book:  
+
+- **Python Fundamentals**: Learn the core concepts of Python by building real applications.  
+- **APIs and Automation**: Build applications that connect to external services and automate repetitive tasks.  
+- **Object-Oriented Programming (OOP)**: Create more structured and maintainable code by mastering OOP.  
+- **Web Development**: Build web applications using Python frameworks.  
+- **Data Science and Machine Learning**: Explore how Python is used in data analysis and AI with hands-on examples.  
+
+Each chapter introduces a new set of skills, guiding you through writing actual code, fixing common problems, and understanding how everything works under the hood. Along the way, you’ll gain insight into how Python is used in the real world.
+
+---
+
+## How to Use This Book
+
+Each chapter is designed to build on the previous one. While you’re welcome to jump around, we recommend following the chapters in order, especially if you’re a beginner. Don’t rush—take your time to understand the concepts and code, and don’t hesitate to experiment with your own ideas. The best way to learn is by doing.
+
+This book also pairs with a series of online courses offered on **Udemy**, giving you the opportunity to watch code in action and practice what you learn in an interactive environment.
+
+---
+
+## A Quick Word About Python in the AI Era
+
+You’re learning Python at the perfect time. With the rise of artificial intelligence and automation, Python is more relevant than ever. It’s the language of choice for AI developers, data scientists, and automation engineers. This book will give you the tools to start building smart, AI-driven applications while also preparing you for the future of programming.
+
+---
+
+## Ready to Get Started?
+
+Let’s dive right in! The first chapter will introduce you to Python, why it’s the perfect language for beginners, and how to set up your Python environment. From there, you’ll start writing your first lines of Python code and building your first application. Remember, the goal is to **learn by doing**—so get ready to write lots of code and have fun along the way!
+
 
 See @knuth84 for additional discussion of literate programming.

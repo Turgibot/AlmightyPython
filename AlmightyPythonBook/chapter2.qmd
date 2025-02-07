@@ -1,5 +1,154 @@
-# Chapter2 - Python Syntax and Variables
+---
+css: style/general.css 
+---
+# Setting Up Python on Your Machine
 
-## Data types: String, Integer, Float, Boolean
-## Variables and assignment
-## Type conversions (int(), float(), str())
+Before we can start writing Python code, we need to make sure that Python is installed and properly set up on your computer. Whether you're using **Windows**, **macOS**, or **Linux**, the process is straightforward, but there are some important details to take note of.
+
+---
+
+## Step 1: Check if Python is Already Installed
+
+First, let's check if Python is already installed on your machine. This can be done through your terminal or command prompt.
+
+
+1. **Windows** - open the **Command Prompt** by pressing {{< kbd Win-R >}}, typing `cmd`, and hitting {{< kbd Enter >}}.</br>
+   **macOS** - open the **Terminal** by pressing {{< kbd Cmd+Alt+T >}}.</br>
+   **Linux** - open the **Terminal** by pressing {{< kbd Ctrl+Alt+T >}}.</br>
+2. Type the following command and press Enter:
+   ```{=html} 
+    <div class="console">
+        <span class="prompt">user@computer&gt;</span> <span class="command">python --version</span><br>
+    </div>
+    ```
+    If Python is installed, you should see something like:
+   
+    ```{=html}
+    <div class="console">
+        <span class="prompt">user@computer&gt;</span> <span class="command">Python 3.10.x</span><br>
+    </div>
+    ```
+
+::: {.callout-tip}
+- **Don’t worry if the version number isn’t exactly what you see in the examples.** It’s perfectly fine if you see **Python 3.11** or **Python 3.12**—those will work great for this book!  
+- **What’s important is that you’re using Python 3.10 and higher.** Avoid using Python versions **lower than 3.10**, as some newer features or improvements might not work properly in older versions.  
+:::
+
+    If not, you'll see an error message telling you that `python` is not recognized.
+
+## Step 2: Installing Python
+
+If Python is not already installed or if you need to install a different version, follow the steps below:
+
+### Windows
+1. Visit the [official Python website](https://www.python.org/downloads/).
+2. Click on the "Download Python" button (make sure to select version 3.x).
+3. Run the installer and **check the box that says "Add Python to PATH"** before clicking "Install Now".
+4. Once installed, verify by running `python --version` in the Command Prompt.
+
+### macOS
+macOS often comes with Python pre-installed. However, it’s typically an older version, so it’s recommended to install the latest version of Python 3.
+
+1. You can install Python using [Homebrew](https://brew.sh/) (a popular package manager for macOS):
+    ```{bash}
+    brew install python
+    ```
+2. Alternatively, you can download the latest Python installer from the [Python website](https://www.python.org/downloads/).
+3. Verify installation by running:
+    ```{bash}
+    python3 --version
+    ```
+
+### Linux
+Most Linux distributions come with Python pre-installed, but you can install or update to the latest version using the package manager.
+
+1. Open your terminal.
+2. For **Debian-based** distributions (like Ubuntu), run:
+    ```{bash}
+    sudo apt update
+    sudo apt install python3
+    ```
+3. For **Red Hat-based** distributions (like Fedora), run:
+    ```{bash}
+    sudo dnf install python3
+    ```
+4. Verify installation by running:
+    ```{bash}
+    python3 --version
+    ```
+
+---
+
+## Step 3: Installing the Python Extension in VSCode
+
+Now that you have VSCode installed, it’s time to make it Python-ready! VSCode is a powerful editor, but it can’t run or understand Python by itself. This is where **extensions** come in. Extensions are small add-ons that extend the functionality of VSCode to support specific tasks or languages. For Python, the extension we need is called the **Python extension**.
+
+### Installing the Python Extension:
+1. Open VSCode.
+2. On the left sidebar, click on the **Extensions** icon, or press `{{< kbd Ctrl+Shift+X >}}` (`{{< kbd Cmd+Shift+X >}}` on macOS) to open the Extensions view.
+3. In the search bar, type **Python**.
+4. The **Python extension by Microsoft** should be the first result. Click **Install**.
+
+The Python extension provides key features like:
+- Syntax highlighting (color-coding your Python code)
+- Code completion (helping you type faster and avoid errors)
+- Integrated debugging (for fixing bugs in your code)
+- Running Python code directly in the editor
+
+After installing the Python extension, VSCode will be ready to run your Python code.
+
+---
+
+## Step 4: Running Your First Python Script in VSCode
+
+Now that we have the Python extension installed, let’s test everything to make sure it’s working!
+
+1. Open VSCode and create a new file called `hello.py`.
+2. Type the following code:
+
+    ```python
+    print("Hello, Almighty Python")
+    ```
+
+3. Save the file by hitting {{< kbd Ctrl+S >}} or {{< kbd Cmd+S >}}.
+4. To run your script, follow these steps:
+   - Open the integrated terminal in VSCode (go to **View** > **Terminal** or press {{< kbd Ctrl+` >}}).
+   - In the terminal, type the following:
+
+    ```bash
+    python hello.py
+    ```
+
+You should see the following output in the terminal:
+
+**Hello, Almighty Python**
+
+
+**Congratulations!** You’ve just written and executed your first Python program.
+
+---
+
+## Step 5: Common Problems and Troubleshooting
+
+### Problem 1: `python` Command Not Found  
+**Solution:** Python might not be added to your system’s PATH.  
+- **Windows:** Reinstall Python and check the option to “Add to PATH” during installation.  
+- **macOS/Linux:** Try using `python3` instead. If that works, create an alias (`alias python=python3`).
+
+### Problem 2: VSCode Doesn’t Detect Python  
+**Solution:**  
+1. Open the Command Palette by pressing {{< kbd Ctrl+Shift+P >}} or {{< kbd Cmd+Shift+P >}}.
+2. Type `Python: Select Interpreter` and choose the Python version you installed.
+
+### Problem 3: Code Runner Doesn’t Work  
+**Solution:** Ensure you’ve installed the **Python extension** by searching for and installing it from the Extensions view. Save your file with the `.py` extension.
+
+### Problem 4: Terminal Shows Permission Denied (macOS/Linux)  
+**Solution:** Check file permissions. Use `chmod +x filename.py` to make the file executable.
+
+---
+
+::: {.callout-note}
+Now that your environment is ready, you’re all set to begin your Python journey! In the next section, we’ll explore the basics of Python syntax and build your first real-world application. Let’s get coding!
+:::
+

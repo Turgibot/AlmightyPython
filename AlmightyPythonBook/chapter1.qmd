@@ -1,4 +1,4 @@
-# Chapter 1 - Introduction to Python
+# Introduction to Python
 ## What is Python? And Why Even Bother Learning It Now (In the AI Era)?
 
 When you go and look for a formal definition, you’ll probably see something like:\
@@ -18,15 +18,14 @@ This is actually a good place to have our first glance at some code. Let's say y
 
 In python as it is a High-level language this can be a simple one liner code:
 
-```
-name = input("Enter your name: ")
 
-```
+<code style="background-color: #f1f3f5; padding: 10px; border-radius: 5px; color: black;">
+name = input("Enter your name: ")
+</code>
 
 Now lets see what the same program looks like when it is implemented in **C** which is a Low-level language :
 
-```
-#include <stdio.h>
+<pre><code style="background-color: #f1f3f5; padding: 10px; border-radius: 5px; color: black;">#include &lt;stdio.h&gt;
 
 int main() {
     char name[100];  // Allocate memory for the name
@@ -37,9 +36,12 @@ int main() {
     
     return 0;
 }
-```
+</code></pre>
+::: {.callout}
+**Note how long and much more complicated it is!** 
+:::
 
-Note how long and much more complicated it is! The main reason for this extra lines of code is that a low-level language gives us more control over hardware and system resources, hence it requires you - the programmer, to also think about memory management, data types, explicit error handling, and more.
+ The main reason for this extra lines of code is that a low-level language gives us more control over hardware and system resources, hence it requires you - the programmer, to also think about memory management, data types, explicit error handling, and more.
 
 Python as a High-Level language is designed to abstract away most of the complexities of dealing with the machine or hardware. You can focus on writing logic, rather than worrying about memory management, compilation, or system-specific details. The language is forgiving and lets you focus on what you want to achieve without dealing with low-level operations.
 
@@ -85,4 +87,3 @@ For example, if you want to build a website, you can use frameworks like Django 
 **Cross-Platform Compatibility** Python is a cross-platform language, meaning you can run your Python code on any major operating system, such as Windows, macOS, and Linux, without having to make any changes. This makes Python a versatile choice for developers who want to build applications that can work across multiple platforms.
 
 \newpage
-# Setting up Python

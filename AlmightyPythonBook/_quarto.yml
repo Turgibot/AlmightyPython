@@ -13,11 +13,13 @@ book:
         - chapter1.qmd
         - chapter2.qmd
         - chapter3.qmd
+        - chapter4.qmd
+        - chapter5.qmd
     - summary.qmd
     - references.qmd
 
 bibliography: references.bib
-
+jupyter: python3
 format:
   html:
     theme:

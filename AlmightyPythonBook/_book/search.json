@@ -14,7 +14,57 @@
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "1.1 Why This Book?\nWelcome to Almighty Python: Master Python by Building Real Applications, your ultimate guide to becoming a professional Python developer! Whether you’re taking your first steps into the world of coding or you’re an experienced developer looking to level up your Python skills, this book is designed for you.\nIn today’s world, Python is everywhere. From powering the biggest tech giants to enabling groundbreaking innovations in artificial intelligence (AI), web development, data science, and automation—it’s no surprise that Python has become one of the most popular and sought-after programming languages. This book is your companion on a journey to master Python while building practical, real-world applications along the way.\nLearning to code can feel overwhelming at first. There are countless tutorials, courses, and articles, each offering bits and pieces of knowledge. What makes this book different? It’s simple: you’ll learn by building. We won’t just throw theory at you—we’ll guide you through creating a range of real applications, starting from basic command-line tools to full-fledged web apps and machine learning projects.\nBy the time you reach the final chapters, you won’t just “know Python”; you’ll have the skills and confidence to build your own applications and solve real-world problems with code.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#who-is-this-book-for",
+    "href": "intro.html#who-is-this-book-for",
+    "title": "1  Introduction",
+    "section": "1.2 Who Is This Book For?",
+    "text": "1.2 Who Is This Book For?\n\nAbsolute Beginners: If you’ve never written a line of code, don’t worry. This book will ease you into programming concepts, explaining everything in plain, simple language.\n\nIntermediate Developers: If you’ve dabbled in Python before, you’ll find plenty of new concepts, advanced techniques, and hands-on projects that will push your skills to the next level.\n\nFuture Python Professionals: This book will help you build the foundation for a successful career as a Python developer by covering everything from Python basics to advanced topics like object-oriented programming, web development, databases, and machine learning.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#what-youll-learn",
+    "href": "intro.html#what-youll-learn",
+    "title": "1  Introduction",
+    "section": "1.3 What You’ll Learn",
+    "text": "1.3 What You’ll Learn\nHere’s a glimpse of what you’ll build and learn in this book:\n\nPython Fundamentals: Learn the core concepts of Python by building real applications.\n\nAPIs and Automation: Build applications that connect to external services and automate repetitive tasks.\n\nObject-Oriented Programming (OOP): Create more structured and maintainable code by mastering OOP.\n\nWeb Development: Build web applications using Python frameworks.\n\nData Science and Machine Learning: Explore how Python is used in data analysis and AI with hands-on examples.\n\nEach chapter introduces a new set of skills, guiding you through writing actual code, fixing common problems, and understanding how everything works under the hood. Along the way, you’ll gain insight into how Python is used in the real world.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#how-to-use-this-book",
+    "href": "intro.html#how-to-use-this-book",
+    "title": "1  Introduction",
+    "section": "1.4 How to Use This Book",
+    "text": "1.4 How to Use This Book\nEach chapter is designed to build on the previous one. While you’re welcome to jump around, we recommend following the chapters in order, especially if you’re a beginner. Don’t rush—take your time to understand the concepts and code, and don’t hesitate to experiment with your own ideas. The best way to learn is by doing.\nThis book also pairs with a series of online courses offered on Udemy, giving you the opportunity to watch code in action and practice what you learn in an interactive environment.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#a-quick-word-about-python-in-the-ai-era",
+    "href": "intro.html#a-quick-word-about-python-in-the-ai-era",
+    "title": "1  Introduction",
+    "section": "1.5 A Quick Word About Python in the AI Era",
+    "text": "1.5 A Quick Word About Python in the AI Era\nYou’re learning Python at the perfect time. With the rise of artificial intelligence and automation, Python is more relevant than ever. It’s the language of choice for AI developers, data scientists, and automation engineers. This book will give you the tools to start building smart, AI-driven applications while also preparing you for the future of programming.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#ready-to-get-started",
+    "href": "intro.html#ready-to-get-started",
+    "title": "1  Introduction",
+    "section": "1.6 Ready to Get Started?",
+    "text": "1.6 Ready to Get Started?\nLet’s dive right in! The first chapter will introduce you to Python, why it’s the perfect language for beginners, and how to set up your Python environment. From there, you’ll start writing your first lines of Python code and building your first application. Remember, the goal is to learn by doing—so get ready to write lots of code and have fun along the way!\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -22,155 +72,144 @@
   {
     "objectID": "chapter1.html",
     "href": "chapter1.html",
-    "title": "2  Chapter 1 - Introduction to Python",
+    "title": "2  Introduction to Python",
     "section": "",
-    "text": "2.1 What is Python? And Why Even Bother Learning It Now (In the AI Era)?\nWhen you go and look for a formal definition, you’ll probably see something like:\n“Python is a general-purpose, high-level, interpreted programming language created by Guido van Rossum and first released in 1991. It is known for its simplicity and readability, making it a great choice for beginners as well as experienced developers.”\nWell, if you’re new to programming, this definition probably didn’t tell you much. Since this book is intended for readers at all programming levels, we will break down each new term in a simple and clear way. Sometimes, if necessary, we’ll explain things more than once—because understanding the basics well is key to mastering Python. Let’s go over some of the important keywords in this definition in a way that actually makes sense:\nLanguage: Python is a programming language because it gives you a way to communicate with computers. You write Python code to tell the computer what to do, just like you’d tell a friend what to do using words.\nGeneral-purpose: Python is a general-purpose language, meaning you can use it for pretty much anything. Whether you want to build a website, analyze data, make games, automate tasks, or even explore artificial intelligence, Python (and this book) has got you covered.\nHigh-level: Python is called a high-level language because it’s designed to be easy for humans to read and write. Unlike low-level languages that deal directly with how the computer works, Python allows you to focus on solving problems without worrying about technical details like memory management. This makes coding much simpler and more beginner-friendly.\nThis is actually a good place to have our first glance at some code. Let’s say you would like to write a program that interacts with a user by asking for its name.\nIn python as it is a High-level language this can be a simple one liner code:\nNow lets see what the same program looks like when it is implemented in C which is a Low-level language :\nNote how long and much more complicated it is! The main reason for this extra lines of code is that a low-level language gives us more control over hardware and system resources, hence it requires you - the programmer, to also think about memory management, data types, explicit error handling, and more.\nPython as a High-Level language is designed to abstract away most of the complexities of dealing with the machine or hardware. You can focus on writing logic, rather than worrying about memory management, compilation, or system-specific details. The language is forgiving and lets you focus on what you want to achieve without dealing with low-level operations.\nInterpreted: Python is an interpreted language, meaning the computer reads and runs your code one step at a time instead of processing everything at once before running it. This makes testing and debugging easier but can sometimes make Python a bit slower than languages that compile everything first.",
+    "text": "2.1 What is Python? And Why Even Bother Learning It Now (In the AI Era)?\nWhen you go and look for a formal definition, you’ll probably see something like:\n“Python is a general-purpose, high-level, interpreted programming language created by Guido van Rossum and first released in 1991. It is known for its simplicity and readability, making it a great choice for beginners as well as experienced developers.”\nWell, if you’re new to programming, this definition probably didn’t tell you much. Since this book is intended for readers at all programming levels, we will break down each new term in a simple and clear way. Sometimes, if necessary, we’ll explain things more than once—because understanding the basics well is key to mastering Python. Let’s go over some of the important keywords in this definition in a way that actually makes sense:\nLanguage: Python is a programming language because it gives you a way to communicate with computers. You write Python code to tell the computer what to do, just like you’d tell a friend what to do using words.\nGeneral-purpose: Python is a general-purpose language, meaning you can use it for pretty much anything. Whether you want to build a website, analyze data, make games, automate tasks, or even explore artificial intelligence, Python (and this book) has got you covered.\nHigh-level: Python is called a high-level language because it’s designed to be easy for humans to read and write. Unlike low-level languages that deal directly with how the computer works, Python allows you to focus on solving problems without worrying about technical details like memory management. This makes coding much simpler and more beginner-friendly.\nThis is actually a good place to have our first glance at some code. Let’s say you would like to write a program that interacts with a user by asking for its name.\nIn python as it is a High-level language this can be a simple one liner code:\nname = input(“Enter your name:”)\nNow lets see what the same program looks like when it is implemented in C which is a Low-level language :\nThe main reason for this extra lines of code is that a low-level language gives us more control over hardware and system resources, hence it requires you - the programmer, to also think about memory management, data types, explicit error handling, and more.\nPython as a High-Level language is designed to abstract away most of the complexities of dealing with the machine or hardware. You can focus on writing logic, rather than worrying about memory management, compilation, or system-specific details. The language is forgiving and lets you focus on what you want to achieve without dealing with low-level operations.\nInterpreted: Python is an interpreted language, meaning the computer reads and runs your code one step at a time instead of processing everything at once before running it. This makes testing and debugging easier but can sometimes make Python a bit slower than languages that compile everything first.",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1 - Introduction to Python</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Python</span>"
     ]
   },
   {
     "objectID": "chapter1.html#what-is-python-and-why-even-bother-learning-it-now-in-the-ai-era",
     "href": "chapter1.html#what-is-python-and-why-even-bother-learning-it-now-in-the-ai-era",
-    "title": "2  Chapter 1 - Introduction to Python",
+    "title": "2  Introduction to Python",
     "section": "",
-    "text": "name = input(\"Enter your name: \")\n\n\n#include &lt;stdio.h&gt;\n\nint main() {\n    char name[100];  // Allocate memory for the name\n\n    // Get user input\n    printf(\"Enter your name: \");\n    scanf(\"%99s\", name);  // Caution with buffer overflow!\n    \n    return 0;\n}",
+    "text": "#include &lt;stdio.h&gt;\n\nint main() {\n    char name[100];  // Allocate memory for the name\n\n    // Get user input\n    printf(\"Enter your name: \");\n    scanf(\"%99s\", name);  // Caution with buffer overflow!\n    \n    return 0;\n}\n\n\n\n\n\n\n\nNote how long and much more complicated it is!",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1 - Introduction to Python</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Python</span>"
     ]
   },
   {
     "objectID": "chapter1.html#why-learn-python-now-the-ai-connection",
     "href": "chapter1.html#why-learn-python-now-the-ai-connection",
-    "title": "2  Chapter 1 - Introduction to Python",
+    "title": "2  Introduction to Python",
     "section": "2.2 Why Learn Python Now? (The AI Connection)",
     "text": "2.2 Why Learn Python Now? (The AI Connection)\nWe’re living in the AI era, where artificial intelligence is transforming industries at an unprecedented pace. From self-driving cars to chat bots, AI is everywhere—and Python is at the heart of it all.\nPython is the go-to language for AI and machine learning because of its vast ecosystem of tools (libraries), such as TensorFlow, PyTorch, and Scikit-learn (no worries we will learn about libraries in the next lessons). These tools make it easier to build intelligent systems without having to write complex code from scratch.\nBut AI isn’t the only reason to learn Python. Python’s simplicity, versatility, and beginner-friendly nature make it a perfect starting point for anyone who wants to step into the world of programming, whether your goal is to get into AI, web development, automation, or just solve everyday problems with code.\nIn the next section, we’ll explore exactly why Python is considered one of the most beginner-friendly programming languages—and why it’s often recommended as the first language to learn.",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1 - Introduction to Python</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Python</span>"
     ]
   },
   {
     "objectID": "chapter1.html#why-is-python-beginner-friendly",
     "href": "chapter1.html#why-is-python-beginner-friendly",
-    "title": "2  Chapter 1 - Introduction to Python",
+    "title": "2  Introduction to Python",
     "section": "2.3 Why is Python Beginner-Friendly?",
     "text": "2.3 Why is Python Beginner-Friendly?\nSimple and Clear Syntax Python’s syntax is often described as “elegant” because of how clean and straightforward it is. If you’re just starting out with programming, Python lets you focus on learning core programming concepts, such as variables, loops, and functions, without getting bogged down by complex syntax rules. For example, here’s how you would write a program that print “Hello, World!” to the screen in Python:\n\nprint(\"Hello, World!\")\n\nHello, World!\n\n\nCompared to other High-level languages like C++ or Java, where you’d have to write more boilerplate code, Python’s version is minimal, allowing you to start writing meaningful code right away.\nReadable Code Python places a strong emphasis on code readability. Its use of indentation (rather than curly braces in many other languages) to define code blocks makes Python programs visually cleaner and easier to follow. This structure makes Python ideal for beginners because it encourages the creation of clean and well-organized code, which is key to developing good programming habits early on.\nDynamic Typing Python is dynamically typed, which means you don’t need to specify the type of variable (like an integer or string) when you declare it. You can directly assign a value to a variable, and Python will figure out the type for you. For example:\n\nx = 5           # x is automatically an integer\nname = \"Alice\"  # name is automatically a string\n\nThis is different from languages like Java or C++, where you have to explicitly define the type of each variable. Dynamic typing makes Python more flexible and allows you to focus on solving problems rather than worrying about types.\nLarge, Supportive Community Python has one of the largest and most active programming communities in the world. Whether you need help troubleshooting an issue or want to learn about the latest Python libraries, there are countless forums, tutorials, and documentation available to help you. The Python community is known for being friendly and welcoming to newcomers, and you’ll find plenty of resources to guide you every step of the way as you start learning.\nExtensive Libraries and Frameworks Another reason Python is beginner-friendly is because of its vast selection of libraries and frameworks. These pre-built tools allow you to avoid reinventing the wheel and instead focus on building your applications faster. For example, if you want to build a website, you can use frameworks like Django or Flask. If you’re interested in data science, there are powerful libraries like Pandas, NumPy, and Matplotlib to help you manipulate and visualize data. These libraries are designed to be easy to use and can dramatically speed up your development process.\nCross-Platform Compatibility Python is a cross-platform language, meaning you can run your Python code on any major operating system, such as Windows, macOS, and Linux, without having to make any changes. This makes Python a versatile choice for developers who want to build applications that can work across multiple platforms.",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1 - Introduction to Python</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Python</span>"
     ]
   },
   {
     "objectID": "chapter2.html",
     "href": "chapter2.html",
-    "title": "3  Chapter2 - Python Syntax and Variables",
+    "title": "3  Setting Up Python on Your Machine",
     "section": "",
-    "text": "3.1 Data types: String, Integer, Float, Boolean",
+    "text": "3.1 Step 1: Check if Python is Already Installed\nBefore we can start writing Python code, we need to make sure that Python is installed and properly set up on your computer. Whether you’re using Windows, macOS, or Linux, the process is straightforward, but there are some important details to take note of.\nFirst, let’s check if Python is already installed on your machine. This can be done through your terminal or command prompt.",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter2 - Python Syntax and Variables</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
     ]
   },
   {
-    "objectID": "chapter2.html#variables-and-assignment",
-    "href": "chapter2.html#variables-and-assignment",
-    "title": "3  Chapter2 - Python Syntax and Variables",
-    "section": "3.2 Variables and assignment",
-    "text": "3.2 Variables and assignment",
+    "objectID": "chapter2.html#step-1-check-if-python-is-already-installed",
+    "href": "chapter2.html#step-1-check-if-python-is-already-installed",
+    "title": "3  Setting Up Python on Your Machine",
+    "section": "",
+    "text": "Windows - open the Command Prompt by pressing Win-RWin-R, typing cmd, and hitting EnterEnter. macOS - open the Terminal by pressing Cmd+Alt+TCmd+Alt+T. Linux - open the Terminal by pressing Ctrl+Alt+TCtrl+Alt+T.\nType the following command and press Enter:\n \n     user@computer&gt; python --version\n \nIf Python is installed, you should see something like:\n\n    user@computer&gt; Python 3.10.x\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nDon’t worry if the version number isn’t exactly what you see in the examples. It’s perfectly fine if you see Python 3.11 or Python 3.12—those will work great for this book!\n\nWhat’s important is that you’re using Python 3.10 and higher. Avoid using Python versions lower than 3.10, as some newer features or improvements might not work properly in older versions.\n\n\n\n\nIf not, you'll see an error message telling you that `python` is not recognized.",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter2 - Python Syntax and Variables</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
     ]
   },
   {
-    "objectID": "chapter2.html#type-conversions-int-float-str",
-    "href": "chapter2.html#type-conversions-int-float-str",
-    "title": "3  Chapter2 - Python Syntax and Variables",
-    "section": "3.3 Type conversions (int(), float(), str())",
-    "text": "3.3 Type conversions (int(), float(), str())",
+    "objectID": "chapter2.html#step-2-installing-python",
+    "href": "chapter2.html#step-2-installing-python",
+    "title": "3  Setting Up Python on Your Machine",
+    "section": "3.2 Step 2: Installing Python",
+    "text": "3.2 Step 2: Installing Python\nIf Python is not already installed or if you need to install a different version, follow the steps below:\n\n3.2.1 Windows\n\nVisit the official Python website.\nClick on the “Download Python” button (make sure to select version 3.x).\nRun the installer and check the box that says “Add Python to PATH” before clicking “Install Now”.\nOnce installed, verify by running python --version in the Command Prompt.\n\n\n\n3.2.2 macOS\nmacOS often comes with Python pre-installed. However, it’s typically an older version, so it’s recommended to install the latest version of Python 3.\n\nYou can install Python using Homebrew (a popular package manager for macOS):\nbrew install python\nAlternatively, you can download the latest Python installer from the Python website.\nVerify installation by running:\npython3 --version\n\n\n\n3.2.3 Linux\nMost Linux distributions come with Python pre-installed, but you can install or update to the latest version using the package manager.\n\nOpen your terminal.\nFor Debian-based distributions (like Ubuntu), run:\nsudo apt update\nsudo apt install python3\nFor Red Hat-based distributions (like Fedora), run:\nsudo dnf install python3\nVerify installation by running:\npython3 --version",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter2 - Python Syntax and Variables</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#step-3-verify-python-is-working",
+    "href": "chapter2.html#step-3-verify-python-is-working",
+    "title": "3  Setting Up Python on Your Machine",
+    "section": "3.3 Step 3: Verify Python is Working",
+    "text": "3.3 Step 3: Verify Python is Working\nAfter installing Python, let’s verify that it’s working properly by running a simple program.\n\nOpen the Command Prompt (Windows) or Terminal (macOS/Linux).\nType the following command and press Enter:\npython3\nThis should open the Python interpreter. You’ll see something like this:\nPython 3.x.x (default, ....) \n[GCC ....] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n&gt;&gt;&gt;\nYou can now type in Python code directly here. Try this: print(\"Hello, Python!\") You should see: Hello, Python!\nTo exit the Python interpreter, press Ctrl + Z",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#common-problems-troubleshooting",
+    "href": "chapter2.html#common-problems-troubleshooting",
+    "title": "3  Setting Up Python on Your Machine",
+    "section": "3.4 Common Problems & Troubleshooting",
+    "text": "3.4 Common Problems & Troubleshooting\n\nProblem 1: Python is not recognized as a command\n\nIf you encounter this error on Windows, it’s likely because you didn’t check the “Add Python to PATH” option during installation. You can fix this by reinstalling Python and ensuring this option is selected.\n\nProblem 2: python3 command not found on macOS/Linux\n\nIf you receive an error that the python3 command is not found, make sure Python 3 is installed properly. On macOS, you can use Homebrew, and on Linux, you can install Python 3 using the package manager.\n\nProblem 3: Python installation is incomplete or failed\n\nOn Windows, ensure that you have the “Add Python to PATH” checkbox checked during installation.\nOn macOS or Linux, use the python3 --version command to verify Python 3 is installed. If not, try re-running the installation steps.\n\nProblem 4: Python opens but commands don’t execute properly\n\nThis might happen if there is a corrupted Python installation. You can try uninstalling Python and reinstalling it.\nEnsure that you are using the correct command (python3 on macOS/Linux, python or python3 on Windows).",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#next-steps",
+    "href": "chapter2.html#next-steps",
+    "title": "3  Setting Up Python on Your Machine",
+    "section": "3.5 Next Steps",
+    "text": "3.5 Next Steps\nNow that you’ve set up Python on your machine and verified it’s working, we can move on to writing your first Python program. In the next section, we’ll dive into Python syntax, variables, and the basics of writing Python code.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
     ]
   },
   {
     "objectID": "chapter3.html",
     "href": "chapter3.html",
-    "title": "4  Chapter3 - Basic Operators and Input",
+    "title": "4  Setting Up the Coding Environment",
     "section": "",
-    "text": "4.1 Arithmetic operators (+, -, *, /)",
+    "text": "4.1 Step 1: Installing VSCode\nIn this chapter, we’ll set up everything you need to start coding in Python. To make things simple and fun, we’ll use Visual Studio Code (VSCode)—a free, lightweight, and powerful editor. If you’re new to coding, don’t worry. We’ll guide you step by step. By the end of this chapter, you’ll be all set to write and run your first Python program!\nAlthough we’ll focus on using VSCode, feel free to use another editor if you prefer. The steps might differ slightly, but the core concepts remain the same.\nOnce installed, launch VSCode. You should see the welcome screen!",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
     ]
   },
   {
-    "objectID": "chapter3.html#comparison-and-logical-operators",
-    "href": "chapter3.html#comparison-and-logical-operators",
-    "title": "4  Chapter3 - Basic Operators and Input",
-    "section": "4.2 Comparison and logical operators",
-    "text": "4.2 Comparison and logical operators",
+    "objectID": "chapter3.html#variables-and-assignment",
+    "href": "chapter3.html#variables-and-assignment",
+    "title": "4  Python Syntax and Variables",
+    "section": "4.2 Variables and assignment",
+    "text": "4.2 Variables and assignment",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
     ]
   },
   {
-    "objectID": "chapter3.html#taking-user-input-with-input",
-    "href": "chapter3.html#taking-user-input-with-input",
-    "title": "4  Chapter3 - Basic Operators and Input",
-    "section": "4.3 Taking user input with input()",
-    "text": "4.3 Taking user input with input()",
+    "objectID": "chapter3.html#type-conversions-int-float-str",
+    "href": "chapter3.html#type-conversions-int-float-str",
+    "title": "4  Python Syntax and Variables",
+    "section": "4.3 Type conversions (int(), float(), str())",
+    "text": "4.3 Type conversions (int(), float(), str())",
     "crumbs": [
       "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#project-1-simple-temperature-converter",
-    "href": "chapter3.html#project-1-simple-temperature-converter",
-    "title": "4  Chapter3 - Basic Operators and Input",
-    "section": "4.4 Project 1: Simple Temperature Converter",
-    "text": "4.4 Project 1: Simple Temperature Converter",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#convert-between-celsius-fahrenheit-and-kelvin",
-    "href": "chapter3.html#convert-between-celsius-fahrenheit-and-kelvin",
-    "title": "4  Chapter3 - Basic Operators and Input",
-    "section": "4.5 Convert between Celsius, Fahrenheit, and Kelvin",
-    "text": "4.5 Convert between Celsius, Fahrenheit, and Kelvin",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#use-input-from-the-user-and-perform-arithmetic-operations",
-    "href": "chapter3.html#use-input-from-the-user-and-perform-arithmetic-operations",
-    "title": "4  Chapter3 - Basic Operators and Input",
-    "section": "4.6 Use input from the user and perform arithmetic operations",
-    "text": "4.6 Use input from the user and perform arithmetic operations",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#format-and-display-the-result",
-    "href": "chapter3.html#format-and-display-the-result",
-    "title": "4  Chapter3 - Basic Operators and Input",
-    "section": "4.7 Format and display the result",
-    "text": "4.7 Format and display the result",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter3 - Basic Operators and Input</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
     ]
   },
   {
@@ -191,6 +230,248 @@
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-1-installing-vscode",
+    "href": "chapter3.html#step-1-installing-vscode",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "",
+    "text": "Go to the Visual Studio Code website.\nYou’ll see download options for Windows, macOS, and Linux. Click the one for your operating system.\nOnce the download is complete, open the installer and follow the instructions.\n\n\n\n\n\n\n\nTip\n\n\n\n\nWindows: Make sure you check the option to “Add to PATH” during installation. This will make it easier to use VSCode from the command line.\nmacOS: Drag the VSCode icon into your Applications folder.\nLinux: Depending on your distribution, you might need to install it using a package manager (apt, yum, or dnf).\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nPin VSCode to your taskbar or dock for easy access.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-2-installing-python",
+    "href": "chapter3.html#step-2-installing-python",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.2 Step 2: Installing Python",
+    "text": "4.2 Step 2: Installing Python\nPython is the language we’ll be using throughout this book. Let’s make sure it’s installed.\n\nOpen a terminal (Command Prompt on Windows, Terminal on macOS/Linux).\nType the following command:\n\n    \n        user@computer&gt; python --version\n    \nIf Python is installed, you’ll see something like:\n    \n        user@computer&gt; Python 3.10.2",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#step-3-verify-that-python-is-working",
+    "href": "chapter2.html#step-3-verify-that-python-is-working",
+    "title": "3  Setting Up Python on Your Machine",
+    "section": "3.3 Step 3: Verify that Python is Working",
+    "text": "3.3 Step 3: Verify that Python is Working\nAfter installing Python, let’s verify that it’s working properly by running a simple program.\n\nOpen the Command Prompt (Windows) or Terminal (macOS/Linux).\nType the following command and press Enter:\n\nuser@computer&gt; python3\n\nThis should open the Python interpreter. You’ll see something like this:\n\nPython 3.10.x (default, ....) \n[GCC ....] on xxxx \nType \"help\", \"copyright\", \"credits\" or \"license\" for more information. \n&gt;&gt;&gt; \n\nYou can now type in Python code directly here. Try this: like this:\n\n&gt;&gt;&gt; print(\"Hello from Almighty Python!\")\n\nYou should see:\n\nHello from Almighty Python!\n\nTo exit the Python interpreter, press Ctrl-ZCtrl-Z",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html",
+    "href": "chapter4.html",
+    "title": "5  Python Syntax and Variables",
+    "section": "",
+    "text": "5.1 Data types: String, Integer, Float, Boolean",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html#variables-and-assignment",
+    "href": "chapter4.html#variables-and-assignment",
+    "title": "5  Python Syntax and Variables",
+    "section": "5.2 Variables and assignment",
+    "text": "5.2 Variables and assignment",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html#type-conversions-int-float-str",
+    "href": "chapter4.html#type-conversions-int-float-str",
+    "title": "5  Python Syntax and Variables",
+    "section": "5.3 Type conversions (int(), float(), str())",
+    "text": "5.3 Type conversions (int(), float(), str())",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html",
+    "href": "chapter5.html",
+    "title": "6  Basic Operators and Input",
+    "section": "",
+    "text": "6.1 Arithmetic operators (+, -, *, /)",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#comparison-and-logical-operators",
+    "href": "chapter5.html#comparison-and-logical-operators",
+    "title": "6  Basic Operators and Input",
+    "section": "6.2 Comparison and logical operators",
+    "text": "6.2 Comparison and logical operators",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#taking-user-input-with-input",
+    "href": "chapter5.html#taking-user-input-with-input",
+    "title": "6  Basic Operators and Input",
+    "section": "6.3 Taking user input with input()",
+    "text": "6.3 Taking user input with input()",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#project-1-simple-temperature-converter",
+    "href": "chapter5.html#project-1-simple-temperature-converter",
+    "title": "6  Basic Operators and Input",
+    "section": "6.4 Project 1: Simple Temperature Converter",
+    "text": "6.4 Project 1: Simple Temperature Converter",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#convert-between-celsius-fahrenheit-and-kelvin",
+    "href": "chapter5.html#convert-between-celsius-fahrenheit-and-kelvin",
+    "title": "6  Basic Operators and Input",
+    "section": "6.5 Convert between Celsius, Fahrenheit, and Kelvin",
+    "text": "6.5 Convert between Celsius, Fahrenheit, and Kelvin",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#use-input-from-the-user-and-perform-arithmetic-operations",
+    "href": "chapter5.html#use-input-from-the-user-and-perform-arithmetic-operations",
+    "title": "6  Basic Operators and Input",
+    "section": "6.6 Use input from the user and perform arithmetic operations",
+    "text": "6.6 Use input from the user and perform arithmetic operations",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#format-and-display-the-result",
+    "href": "chapter5.html#format-and-display-the-result",
+    "title": "6  Basic Operators and Input",
+    "section": "6.7 Format and display the result",
+    "text": "6.7 Format and display the result",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-2-verify-your-python-installation",
+    "href": "chapter3.html#step-2-verify-your-python-installation",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.2 Step 2: Verify your Python installation",
+    "text": "4.2 Step 2: Verify your Python installation\n\n\n\n\n\n\nNote\n\n\n\nYou may skip this step if you have previously verified python on your machine.\n\n\nPython is the language we’ll be using throughout this book. Let’s make sure it’s installed.\n\nOpen a terminal (Command Prompt on Windows, Terminal on macOS/Linux).\nType the following command:\n\n    user@computer&gt; python --version\n\nIf Python is installed, you’ll see something like:\n\n    user@computer&gt; Python 3.10.x\n\nIf not, you’ll see an error message telling you that python is not recognized. Please refer to the python installation section of this book and return here when done.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-3-configuring-vscode-for-python",
+    "href": "chapter3.html#step-3-configuring-vscode-for-python",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.3 Step 3: Configuring VSCode for Python",
+    "text": "4.3 Step 3: Configuring VSCode for Python\nNow that we have Python installed, let’s turn VSCode into a Python powerhouse by installing a few extensions.\n\nOpen VSCode.\nGo to the Extensions view by clicking the Extensions icon on the sidebar or pressing Ctrl+Shift+X (Cmd+Shift+X on macOS).\nSearch for and install the following extensions:\n\n\n4.3.1 Must-Have Extensions:\n\nPython (by Microsoft) – Adds Python support, syntax highlighting, debugging, and IntelliSense.\n\nPylance – Provides advanced IntelliSense and type information.\n\nCode Runner – Run your Python scripts with one click.\n\nBlack – Automatically formats your code to look neat and consistent.\n\nflake8 – Helps catch errors and enforce Python style guidelines.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-4-running-your-first-python-script-in-vscode",
+    "href": "chapter3.html#step-4-running-your-first-python-script-in-vscode",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.4 Step 4: Running Your First Python Script in VSCode",
+    "text": "4.4 Step 4: Running Your First Python Script in VSCode\nNow that we have the Python extension installed, let’s test everything to make sure it’s working!\n\nOpen VSCode and create a new file called hello.py.\nType the following code:\nprint(\"Hello, Python!\")\nSave the file (Ctrl+S or Cmd+S).\nTo run your script, follow these steps:\n\nOpen the integrated terminal in VSCode (go to View &gt; Terminal or press Ctrl+`).\nIn the terminal, type the following:\n\npython hello.py\n\nYou should see the following output in the terminal:\nHello, Python!\npgsql Copy Edit\nCongratulations! You’ve just written and executed your first Python program.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-5-common-problems-and-troubleshooting",
+    "href": "chapter3.html#step-5-common-problems-and-troubleshooting",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.5 Step 5: Common Problems and Troubleshooting",
+    "text": "4.5 Step 5: Common Problems and Troubleshooting\n\n4.5.1 Problem 1: python Command Not Found\nSolution: Python might not be added to your system’s PATH.\n- Windows: Reinstall Python and check the option to “Add to PATH” during installation.\n- macOS/Linux: Try using python3 instead. If that works, create an alias (alias python=python3).\n\n\n4.5.2 Problem 2: VSCode Doesn’t Detect Python\nSolution:\n1. Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P).\n2. Type Python: Select Interpreter and choose the Python version you installed.\n\n\n4.5.3 Problem 3: Code Runner Doesn’t Work\nSolution: Ensure you’ve installed the Python extension by searching for and installing it from the Extensions view. Save your file with the .py extension.\n\n\n4.5.4 Problem 4: Terminal Shows Permission Denied (macOS/Linux)\nSolution: Check file permissions. Use chmod +x filename.py to make the file executable.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#final-words",
+    "href": "chapter3.html#final-words",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.6 Final Words",
+    "text": "4.6 Final Words\nNow that your environment is ready, you’re all set to begin your Python journey! In the next section, we’ll explore the basics of Python syntax and build your first real-world application. Let’s get coding!",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-3-installing-the-python-extension-in-vscode",
+    "href": "chapter3.html#step-3-installing-the-python-extension-in-vscode",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.3 Step 3: Installing the Python Extension in VSCode",
+    "text": "4.3 Step 3: Installing the Python Extension in VSCode\nNow that you have VSCode installed, it’s time to make it Python-ready! VSCode is a powerful editor, but it can’t run or understand Python by itself. This is where extensions come in. Extensions are small add-ons that extend the functionality of VSCode to support specific tasks or languages. For Python, the extension we need is called the Python extension.\n\n4.3.1 Installing the Python Extension:\n\nOpen VSCode.\nOn the left sidebar, click on the Extensions icon, or press Ctrl+Shift+X (Cmd+Shift+X on macOS) to open the Extensions view.\nIn the search bar, type Python.\nThe Python extension by Microsoft should be the first result. Click Install.\n\nThe Python extension provides key features like: - Syntax highlighting (color-coding your Python code) - Code completion (helping you type faster and avoid errors) - Integrated debugging (for fixing bugs in your code) - Running Python code directly in the editor\nAfter installing the Python extension, VSCode will be ready to run your Python code.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#step-3-installing-the-python-extension-in-vscode",
+    "href": "chapter2.html#step-3-installing-the-python-extension-in-vscode",
+    "title": "3  Setting Up Python on Your Machine",
+    "section": "3.3 Step 3: Installing the Python Extension in VSCode",
+    "text": "3.3 Step 3: Installing the Python Extension in VSCode\nNow that you have VSCode installed, it’s time to make it Python-ready! VSCode is a powerful editor, but it can’t run or understand Python by itself. This is where extensions come in. Extensions are small add-ons that extend the functionality of VSCode to support specific tasks or languages. For Python, the extension we need is called the Python extension.\n\n3.3.1 Installing the Python Extension:\n\nOpen VSCode.\nOn the left sidebar, click on the Extensions icon, or press  ( on macOS) to open the Extensions view.\nIn the search bar, type Python.\nThe Python extension by Microsoft should be the first result. Click Install.\n\nThe Python extension provides key features like: - Syntax highlighting (color-coding your Python code) - Code completion (helping you type faster and avoid errors) - Integrated debugging (for fixing bugs in your code) - Running Python code directly in the editor\nAfter installing the Python extension, VSCode will be ready to run your Python code.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#step-4-running-your-first-python-script-in-vscode",
+    "href": "chapter2.html#step-4-running-your-first-python-script-in-vscode",
+    "title": "3  Setting Up Python on Your Machine",
+    "section": "3.4 Step 4: Running Your First Python Script in VSCode",
+    "text": "3.4 Step 4: Running Your First Python Script in VSCode\nNow that we have the Python extension installed, let’s test everything to make sure it’s working!\n\nOpen VSCode and create a new file called hello.py.\nType the following code:\nprint(\"Hello, Almighty Python\")\nSave the file by hitting Ctrl+SCtrl+S or Cmd+SCmd+S.\nTo run your script, follow these steps:\n\nOpen the integrated terminal in VSCode (go to View &gt; Terminal or press Ctrl+`Ctrl+`).\nIn the terminal, type the following:\n\npython hello.py\n\nYou should see the following output in the terminal:\nHello, Almighty Python\nCongratulations! You’ve just written and executed your first Python program.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#step-5-common-problems-and-troubleshooting",
+    "href": "chapter2.html#step-5-common-problems-and-troubleshooting",
+    "title": "3  Setting Up Python on Your Machine",
+    "section": "3.5 Step 5: Common Problems and Troubleshooting",
+    "text": "3.5 Step 5: Common Problems and Troubleshooting\n\n3.5.1 Problem 1: python Command Not Found\nSolution: Python might not be added to your system’s PATH.\n- Windows: Reinstall Python and check the option to “Add to PATH” during installation.\n- macOS/Linux: Try using python3 instead. If that works, create an alias (alias python=python3).\n\n\n3.5.2 Problem 2: VSCode Doesn’t Detect Python\nSolution:\n1. Open the Command Palette by pressing Ctrl+Shift+PCtrl+Shift+P or Cmd+Shift+PCmd+Shift+P. 2. Type Python: Select Interpreter and choose the Python version you installed.\n\n\n3.5.3 Problem 3: Code Runner Doesn’t Work\nSolution: Ensure you’ve installed the Python extension by searching for and installing it from the Extensions view. Save your file with the .py extension.\n\n\n3.5.4 Problem 4: Terminal Shows Permission Denied (macOS/Linux)\nSolution: Check file permissions. Use chmod +x filename.py to make the file executable.\n\n\n\n\n\n\n\nNote\n\n\n\nNow that your environment is ready, you’re all set to begin your Python journey! In the next section, we’ll explore the basics of Python syntax and build your first real-world application. Let’s get coding!",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
     ]
   }
 ]

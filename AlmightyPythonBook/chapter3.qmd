@@ -1,9 +1,131 @@
-# Chapter3 - Basic Operators and Input
+---
+css: style/general.css 
+---
+# Setting Up the Coding Environment
 
-## Arithmetic operators (+, -, *, /)
-## Comparison and logical operators
-## Taking user input with input()
-## Project 1: Simple Temperature Converter
-## Convert between Celsius, Fahrenheit, and Kelvin
-## Use input from the user and perform arithmetic operations
-## Format and display the result
+In this chapter, we’ll set up everything you need to start coding in Python. To make things simple and fun, we’ll use **Visual Studio Code (VSCode)**—a free, lightweight, and powerful editor. If you’re new to coding, don’t worry. We’ll guide you step by step. By the end of this chapter, you’ll be all set to write and run your first Python program!
+
+Although we’ll focus on using VSCode, feel free to use another editor if you prefer. The steps might differ slightly, but the core concepts remain the same.
+
+---
+
+## Step 1: Installing VSCode
+
+1. Go to the [Visual Studio Code website](https://code.visualstudio.com/).
+2. You’ll see download options for Windows, macOS, and Linux. Click the one for your operating system.
+3. Once the download is complete, open the installer and follow the instructions.
+
+::: {.callout-tip}
+- **Windows:** Make sure you check the option to “Add to PATH” during installation. This will make it easier to use VSCode from the command line.</br>
+- **macOS:** Drag the VSCode icon into your Applications folder.</br>
+- **Linux:** Depending on your distribution, you might need to install it using a package manager (`apt`, `yum`, or `dnf`).
+:::
+
+
+Once installed, launch VSCode. You should see the welcome screen!
+
+::: {.callout-tip}
+Pin VSCode to your taskbar or dock for easy access.
+:::
+
+---
+
+## Step 2: Verify your Python installation
+::: {.callout-note}
+You may skip this step if you have previously verified python on your machine.
+:::
+Python is the language we’ll be using throughout this book. Let’s make sure it’s installed.
+
+1. Open a terminal (Command Prompt on Windows, Terminal on macOS/Linux).
+2. Type the following command:
+
+    ```{=html}
+    <div class="console">
+        <span class="prompt">user@computer&gt;</span> <span class="command">python --version</span><br>
+    </div>
+    ```
+    If Python is installed, you’ll see something like:
+    ```{=html}
+    <div class="console">
+        <span class="prompt">user@computer&gt;</span> <span class="command">Python 3.10.x</span><br>
+    </div>
+    ```
+    If not, you'll see an error message telling you that `python` is not recognized. Please refer to the python installation section of this book and return here when done.
+
+    ---
+
+## Step 3: Installing the Python Extension in VSCode
+
+Now that you have VSCode installed, it’s time to make it Python-ready! VSCode is a powerful editor, but it can’t run or understand Python by itself. This is where **extensions** come in. Extensions are small add-ons that extend the functionality of VSCode to support specific tasks or languages. For Python, the extension we need is called the **Python extension**.
+
+### Installing the Python Extension:
+1. Open VSCode.
+2. On the left sidebar, click on the **Extensions** icon, or press `Ctrl+Shift+X` (`Cmd+Shift+X` on macOS) to open the Extensions view.
+3. In the search bar, type **Python**.
+4. The **Python extension by Microsoft** should be the first result. Click **Install**.
+
+The Python extension provides key features like:
+- Syntax highlighting (color-coding your Python code)
+- Code completion (helping you type faster and avoid errors)
+- Integrated debugging (for fixing bugs in your code)
+- Running Python code directly in the editor
+
+After installing the Python extension, VSCode will be ready to run your Python code.
+
+---
+
+## Step 4: Running Your First Python Script in VSCode
+
+Now that we have the Python extension installed, let’s test everything to make sure it’s working!
+
+1. Open VSCode and create a new file called `hello.py`.
+2. Type the following code:
+
+    ```python
+    print("Hello, Python!")
+    ```
+
+3. Save the file (`Ctrl+S` or `Cmd+S`).
+4. To run your script, follow these steps:
+   - Open the integrated terminal in VSCode (go to **View** > **Terminal** or press ``Ctrl+` ``).
+   - In the terminal, type the following:
+
+    ```bash
+    python hello.py
+    ```
+
+You should see the following output in the terminal:
+
+Hello, Python!
+
+pgsql
+Copy
+Edit
+
+**Congratulations!** You’ve just written and executed your first Python program.
+
+---
+
+## Step 5: Common Problems and Troubleshooting
+
+### Problem 1: `python` Command Not Found  
+**Solution:** Python might not be added to your system’s PATH.  
+- **Windows:** Reinstall Python and check the option to “Add to PATH” during installation.  
+- **macOS/Linux:** Try using `python3` instead. If that works, create an alias (`alias python=python3`).
+
+### Problem 2: VSCode Doesn’t Detect Python  
+**Solution:**  
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).  
+2. Type `Python: Select Interpreter` and choose the Python version you installed.
+
+### Problem 3: Code Runner Doesn’t Work  
+**Solution:** Ensure you’ve installed the **Python extension** by searching for and installing it from the Extensions view. Save your file with the `.py` extension.
+
+### Problem 4: Terminal Shows Permission Denied (macOS/Linux)  
+**Solution:** Check file permissions. Use `chmod +x filename.py` to make the file executable.
+
+---
+
+## Final Words  
+
+Now that your environment is ready, you’re all set to begin your Python journey! In the next section, we’ll explore the basics of Python syntax and build your first real-world application. Let’s get coding!
