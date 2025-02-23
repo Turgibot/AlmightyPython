@@ -82,7 +82,7 @@ Now that we have the Python extension installed, let’s test everything to make
 2. Type the following code:
 
     ```python
-    print("Hello, Python!")
+    print("Hello, Almighty Python!")
     ```
 
 3. Save the file (`Ctrl+S` or `Cmd+S`).
@@ -95,9 +95,9 @@ Now that we have the Python extension installed, let’s test everything to make
     ```
 
 You should see the following output in the terminal:
-
-Hello, Python!
-
+```
+Hello, Almighty Python!
+```
 pgsql
 Copy
 Edit
@@ -126,6 +126,6 @@ Edit
 
 ---
 
-## Final Words  
-
+::: {.callout-note}
 Now that your environment is ready, you’re all set to begin your Python journey! In the next section, we’ll explore the basics of Python syntax and build your first real-world application. Let’s get coding!
+::: 

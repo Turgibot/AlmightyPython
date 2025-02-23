@@ -20,3 +20,13 @@
 .console .command {
   color: #ffffff;
 }
+
+.cell-output {
+  background-color: #d3d3d3;
+  border: #d3d3d3;
+}
+
+li pre code:not(.sourceCode),
+pre code:not(.sourceCode) {
+  background-color: rgb(162, 233, 227);
+}

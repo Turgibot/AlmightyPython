@@ -1,0 +1,13 @@
+MOTO
+
+Be different - do not explain first do after 
+ - talk short about the problem/goal
+ - show a basic example 
+ - explain about the problem and the solution
+ - show a more advanced example - repeating the explanation
+ - give 3 exercises - simple, intermediate, and advanced.
+
+ Things to include in the book
+ 
+ regex
+ Data type interrogation 

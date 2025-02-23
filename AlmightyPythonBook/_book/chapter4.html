@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -37,10 +71,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-86daaaaad7353f9cc0c554efc1dd6d94.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a213531be33c1ce45a14abbd4a580e9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ff90be1dc76bc93088a5da8a498ff544.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/kbd/kbd.js"></script>
+<link href="site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,6 +106,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="style/general.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -154,7 +191,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators and Input</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators in Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ty</span></span></a>
   </div>
 </li>
       </ul>
@@ -162,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -181,9 +224,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#data-types-string-integer-float-boolean" id="toc-data-types-string-integer-float-boolean" class="nav-link active" data-scroll-target="#data-types-string-integer-float-boolean"><span class="header-section-number">5.1</span> Data types: String, Integer, Float, Boolean</a></li>
-  <li><a href="#variables-and-assignment" id="toc-variables-and-assignment" class="nav-link" data-scroll-target="#variables-and-assignment"><span class="header-section-number">5.2</span> Variables and assignment</a></li>
-  <li><a href="#type-conversions-int-float-str" id="toc-type-conversions-int-float-str" class="nav-link" data-scroll-target="#type-conversions-int-float-str"><span class="header-section-number">5.3</span> Type conversions (int(), float(), str())</a></li>
+  <li><a href="#comments-in-python" id="toc-comments-in-python" class="nav-link active" data-scroll-target="#comments-in-python"><span class="header-section-number">5.1</span> Comments in Python</a>
+  <ul class="collapse">
+  <li><a href="#single-line-comments" id="toc-single-line-comments" class="nav-link" data-scroll-target="#single-line-comments"><span class="header-section-number">5.1.1</span> Single-line Comments</a></li>
+  <li><a href="#multi-line-comments" id="toc-multi-line-comments" class="nav-link" data-scroll-target="#multi-line-comments"><span class="header-section-number">5.1.2</span> Multi-line Comments</a></li>
+  <li><a href="#why-use-comments" id="toc-why-use-comments" class="nav-link" data-scroll-target="#why-use-comments"><span class="header-section-number">5.1.3</span> Why Use Comments?</a></li>
+  </ul></li>
+  <li><a href="#variables-and-assignment" id="toc-variables-and-assignment" class="nav-link" data-scroll-target="#variables-and-assignment"><span class="header-section-number">5.2</span> Variables and Assignment</a></li>
+  <li><a href="#basic-data-types-string-integer-float-boolean" id="toc-basic-data-types-string-integer-float-boolean" class="nav-link" data-scroll-target="#basic-data-types-string-integer-float-boolean"><span class="header-section-number">5.3</span> Basic Data Types: String, Integer, Float, Boolean</a>
+  <ul class="collapse">
+  <li><a href="#string-str" id="toc-string-str" class="nav-link" data-scroll-target="#string-str"><span class="header-section-number">5.3.1</span> <strong>String (<code>str</code>)</strong></a></li>
+  <li><a href="#string-concatenation-and-repetition" id="toc-string-concatenation-and-repetition" class="nav-link" data-scroll-target="#string-concatenation-and-repetition"><span class="header-section-number">5.3.2</span> String Concatenation and Repetition</a></li>
+  <li><a href="#integer-int" id="toc-integer-int" class="nav-link" data-scroll-target="#integer-int"><span class="header-section-number">5.3.3</span> <strong>Integer (<code>int</code>)</strong></a></li>
+  <li><a href="#float-float" id="toc-float-float" class="nav-link" data-scroll-target="#float-float"><span class="header-section-number">5.3.4</span> <strong>Float (<code>float</code>)</strong></a></li>
+  <li><a href="#boolean-bool" id="toc-boolean-bool" class="nav-link" data-scroll-target="#boolean-bool"><span class="header-section-number">5.3.5</span> <strong>Boolean (<code>bool</code>)</strong></a></li>
+  <li><a href="#type-converstion-and-interrogation" id="toc-type-converstion-and-interrogation" class="nav-link" data-scroll-target="#type-converstion-and-interrogation"><span class="header-section-number">5.3.6</span> Type converstion and interrogation</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">5.4</span> Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -209,14 +266,225 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="data-types-string-integer-float-boolean" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="data-types-string-integer-float-boolean"><span class="header-section-number">5.1</span> Data types: String, Integer, Float, Boolean</h2>
+<p>In this chapter, we’ll cover the basics of Python’s syntax, data types, and how to use variables. These concepts are essential for writing your first Python programs. Remember, the best way to learn is by coding!</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>🚀 Open your VSCode, create a new Python file (e.g., <code>variables.py</code>), and type the examples from this chapter. Modify the code, play with it, and see what happens. Experimentation is key!</p>
+</div>
+</div>
+<hr>
+<section id="comments-in-python" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="comments-in-python"><span class="header-section-number">5.1</span> Comments in Python</h2>
+<p>Comments are lines in your code that Python ignores when running the program. They are used to explain what the code does, making it easier to understand for yourself and others. Comments can also be used to temporarily disable parts of your code.</p>
+<section id="single-line-comments" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="single-line-comments"><span class="header-section-number">5.1.1</span> Single-line Comments</h3>
+<p>In Python, single-line comments start with the <code>#</code> symbol.</p>
+<div id="67e8327a" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This is a comment</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, Almighty Python!"</span>)  <span class="co"># This comment is ignored</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hello, Almighty Python!</code></pre>
+</div>
+</div>
+</section>
+<section id="multi-line-comments" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="multi-line-comments"><span class="header-section-number">5.1.2</span> Multi-line Comments</h3>
+<p>Python doesn’t have a specific multi-line comment syntax, but you can use triple quotes (’’’) to create a block of comments.</p>
+<div id="0c0dff4b" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">This is a multi-line comment.</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">You can use it to write longer explanations</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">or to temporarily disable parts of your code.</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Multi-line comments are helpful!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Multi-line comments are helpful!</code></pre>
+</div>
+</div>
+</section>
+<section id="why-use-comments" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="why-use-comments"><span class="header-section-number">5.1.3</span> Why Use Comments?</h3>
+<ul>
+<li><strong>Explain your code:</strong> Help yourself or others understand what the code does.</li>
+<li><strong>Debugging:</strong> Comment out parts of the code to isolate problems.</li>
+<li><strong>Documentation:</strong> Make your code more readable and easier to maintain.</li>
+</ul>
+</section>
 </section>
 <section id="variables-and-assignment" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="variables-and-assignment"><span class="header-section-number">5.2</span> Variables and assignment</h2>
+<h2 data-number="5.2" class="anchored" data-anchor-id="variables-and-assignment"><span class="header-section-number">5.2</span> Variables and Assignment</h2>
+<p>In Python, variables are used to store data. You assign a value to a variable using the = symbol. The variable name should be descriptive and follow certain rules (e.g., no spaces or special characters, should not start with a number). Variables have type that depends on the type of data they store. We’ll talk more about data types shortly but for now, take a look at these four variables and note the different types assigned to them.</p>
+<div id="ecd4eec1" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Almighty Python"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>price <span class="op">=</span> <span class="fl">19.99</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>is_cool <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(name)  </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(age)   </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(price)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_cool)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Almighty Python
+25
+19.99
+True</code></pre>
+</div>
+</div>
 </section>
-<section id="type-conversions-int-float-str" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="type-conversions-int-float-str"><span class="header-section-number">5.3</span> Type conversions (int(), float(), str())</h2>
+<section id="basic-data-types-string-integer-float-boolean" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="basic-data-types-string-integer-float-boolean"><span class="header-section-number">5.3</span> Basic Data Types: String, Integer, Float, Boolean</h2>
+<section id="string-str" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="string-str"><span class="header-section-number">5.3.1</span> <strong>String (<code>str</code>)</strong></h3>
+<p>Strings represent text and are enclosed in quotes (<code>'single'</code> or <code>"double"</code>).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use triple quotes (<code>"""</code> or <code>'''</code>) for multi-line text.</p>
+</div>
+</div>
+<div id="c7012429" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">'Almighty Python - Learning about strings'</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>question <span class="op">=</span> <span class="st">"What is Python?"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>description <span class="op">=</span> <span class="st">"""It is a powerful and beginner-friendly programming</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="st">language that supports writing long texts on multiple lines like so."""</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(name)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(question)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(description)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Almighty Python - Learning about strings
+What is Python?
+It is a powerful and beginner-friendly programming
+language that supports writing long texts on multiple lines like so.</code></pre>
+</div>
+</div>
+</section>
+<section id="string-concatenation-and-repetition" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="string-concatenation-and-repetition"><span class="header-section-number">5.3.2</span> String Concatenation and Repetition</h3>
+<p>You can combine strings using the <kbd aria-hidden="true">+</kbd><span class="visually-hidden">+</span> operator or repeat them using <kbd aria-hidden="true">*</kbd><span class="visually-hidden">*</span>.</p>
+<div id="bb47c91c" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>first_name <span class="op">=</span> <span class="st">"Almighty"</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>last_name <span class="op">=</span> <span class="st">"Python"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>full_name <span class="op">=</span> first_name <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> last_name</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_name) </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>repeated <span class="op">=</span> <span class="st">"Hi! "</span> <span class="op">*</span> <span class="dv">3</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(repeated)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Almighty Python
+Hi! Hi! Hi! </code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can do many more operations with strings. Actually string operations are covered in their own section - definitely something to look forward to!</p>
+</div>
+</div>
+</section>
+<section id="integer-int" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="integer-int"><span class="header-section-number">5.3.3</span> <strong>Integer (<code>int</code>)</strong></h3>
+<p>An integer is a whole number without a decimal point. Integers can be positive, negative, or zero.</p>
+<div id="f2447188" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>year <span class="op">=</span> <span class="dv">2025</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>balance <span class="op">=</span> <span class="op">-</span><span class="dv">100</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(age <span class="op">+</span> <span class="dv">5</span>)      <span class="co"># Addition</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(year <span class="op">-</span> <span class="dv">2000</span>)  <span class="co"># Subtraction</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(balance <span class="op">*</span> <span class="dv">2</span>)  <span class="co"># Multiplication</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>30
+25
+-200</code></pre>
+</div>
+</div>
+</section>
+<section id="float-float" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="float-float"><span class="header-section-number">5.3.4</span> <strong>Float (<code>float</code>)</strong></h3>
+<p>A float is a number with a decimal point. It is used for precise values like measurements, scientific calculations, or financial data.</p>
+<div id="7f80c3cc" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>price <span class="op">=</span> <span class="fl">19.99</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>temperature <span class="op">=</span> <span class="op">-</span><span class="fl">10.5</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>pi <span class="op">=</span> <span class="fl">3.14159</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(price <span class="op">*</span> <span class="dv">2</span>)         </span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(temperature <span class="op">+</span> <span class="dv">5</span>)   </span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pi <span class="op">+</span> pi)   </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>39.98
+-5.5
+6.28318</code></pre>
+</div>
+</div>
+</section>
+<section id="boolean-bool" class="level3" data-number="5.3.5">
+<h3 data-number="5.3.5" class="anchored" data-anchor-id="boolean-bool"><span class="header-section-number">5.3.5</span> <strong>Boolean (<code>bool</code>)</strong></h3>
+<p>Booleans represent logical values: True or False. They are used for decision-making and comparisons in your programs.</p>
+<div id="ff2a98e8" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>is_python_fun <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>is_sky_green <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_python_fun)      </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_sky_green)             </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>True
+False</code></pre>
+</div>
+</div>
+</section>
+<section id="type-converstion-and-interrogation" class="level3" data-number="5.3.6">
+<h3 data-number="5.3.6" class="anchored" data-anchor-id="type-converstion-and-interrogation"><span class="header-section-number">5.3.6</span> Type converstion and interrogation</h3>
+<p>TODO</p>
+</section>
+</section>
+<section id="summary" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.4</span> Summary</h2>
+<p>In this chapter, you’ve learned about Python’s syntax, basic data types, variables, and how to use comments. These are fundamental concepts that will help you build a strong foundation for writing Python programs.</p>
+<p><strong>Key Takeaways:</strong></p>
+<ul>
+<li>Python has four main basic data types: <code>str</code>, <code>int</code>, <code>float</code>, and <code>bool</code>.<br>
+</li>
+<li>Use variables to store data and make your code more readable.<br>
+</li>
+<li>Comments improve code clarity and help with debugging.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>💡 Remember: Keep experimenting! The best way to learn is by trying different things in your code. Modify the examples, create your own, and observe the results.</p>
+</div>
+</div>
 
 
 </section>
@@ -646,8 +914,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter5.html" class="pagination-link" aria-label="Basic Operators and Input">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators and Input</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter5.html" class="pagination-link" aria-label="Basic Operators in Python">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators in Python</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

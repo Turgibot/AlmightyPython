@@ -15,6 +15,7 @@ book:
         - chapter3.qmd
         - chapter4.qmd
         - chapter5.qmd
+        - chapter6.qmd
     - summary.qmd
     - references.qmd
 
@@ -25,6 +26,7 @@ format:
     theme:
       - cosmo
       - brand
+    css: style/general.css
   pdf:
     documentclass: scrreprt
     include-in-header:
@@ -36,3 +38,7 @@ format:
         \printindex
   epub:
     cover-image: cover.png
+
+code-block-bg: true
+code-block-border-left: "#31BAE9"
+highlight-style: github

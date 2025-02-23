@@ -1,0 +1,8 @@
+\usepackage{xcolor}  % To define custom colors
+\usepackage{tcolorbox}  % For colored boxes
+
+% Define a custom green color for code output
+\definecolor{lightgreen}{rgb}{0.85, 1, 0.85}  % Light green color
+
+% Redefine the code output style
+\newtcolorbox[auto counter, number within=section]{outputbox}[2][]{colframe=green!70!black, colback=lightgreen!30, coltitle=black, fonttitle=\bfseries, title=Output: #2,#1}

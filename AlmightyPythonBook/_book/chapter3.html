@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-86daaaaad7353f9cc0c554efc1dd6d94.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a213531be33c1ce45a14abbd4a580e9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ff90be1dc76bc93088a5da8a498ff544.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -189,7 +189,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators and Input</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators in Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ty</span></span></a>
   </div>
 </li>
       </ul>
@@ -197,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -230,7 +236,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#problem-3-code-runner-doesnt-work" id="toc-problem-3-code-runner-doesnt-work" class="nav-link" data-scroll-target="#problem-3-code-runner-doesnt-work"><span class="header-section-number">4.5.3</span> Problem 3: Code Runner Doesn’t Work</a></li>
   <li><a href="#problem-4-terminal-shows-permission-denied-macoslinux" id="toc-problem-4-terminal-shows-permission-denied-macoslinux" class="nav-link" data-scroll-target="#problem-4-terminal-shows-permission-denied-macoslinux"><span class="header-section-number">4.5.4</span> Problem 4: Terminal Shows Permission Denied (macOS/Linux)</a></li>
   </ul></li>
-  <li><a href="#final-words" id="toc-final-words" class="nav-link" data-scroll-target="#final-words"><span class="header-section-number">4.6</span> Final Words</a></li>
   </ul>
 </nav>
     </div>
@@ -351,7 +356,7 @@ Note
 <ol type="1">
 <li><p>Open VSCode and create a new file called <code>hello.py</code>.</p></li>
 <li><p>Type the following code:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, Python!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, Almighty Python!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Save the file (<code>Ctrl+S</code> or <code>Cmd+S</code>).</p></li>
 <li><p>To run your script, follow these steps:</p>
 <ul>
@@ -361,7 +366,7 @@ Note
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> hello.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 <p>You should see the following output in the terminal:</p>
-<p>Hello, Python!</p>
+<pre><code>Hello, Almighty Python!</code></pre>
 <p>pgsql Copy Edit</p>
 <p><strong>Congratulations!</strong> You’ve just written and executed your first Python program.</p>
 <hr>
@@ -388,13 +393,22 @@ Note
 <h3 data-number="4.5.4" class="anchored" data-anchor-id="problem-4-terminal-shows-permission-denied-macoslinux"><span class="header-section-number">4.5.4</span> Problem 4: Terminal Shows Permission Denied (macOS/Linux)</h3>
 <p><strong>Solution:</strong> Check file permissions. Use <code>chmod +x filename.py</code> to make the file executable.</p>
 <hr>
-</section>
-</section>
-<section id="final-words" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="final-words"><span class="header-section-number">4.6</span> Final Words</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Now that your environment is ready, you’re all set to begin your Python journey! In the next section, we’ll explore the basics of Python syntax and build your first real-world application. Let’s get coding!</p>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

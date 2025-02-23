@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Basic Operators and Input – AlmightyPythonBook</title>
+<title>6&nbsp; Basic Operators in Python – AlmightyPythonBook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,17 +64,17 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
+<link href="./chapter6.html" rel="next">
 <link href="./chapter4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-86daaaaad7353f9cc0c554efc1dd6d94.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a213531be33c1ce45a14abbd4a580e9a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ff90be1dc76bc93088a5da8a498ff544.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,6 +104,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="style/general.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -81,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Part 1 - Getting Started</a></li><li class="breadcrumb-item"><a href="./chapter5.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators and Input</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Part 1 - Getting Started</a></li><li class="breadcrumb-item"><a href="./chapter5.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators in Python</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -154,7 +189,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter5.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators and Input</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators in Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ty</span></span></a>
   </div>
 </li>
       </ul>
@@ -162,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -181,22 +222,42 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#arithmetic-operators--" id="toc-arithmetic-operators--" class="nav-link active" data-scroll-target="#arithmetic-operators--"><span class="header-section-number">6.1</span> Arithmetic operators (+, -, *, /)</a></li>
-  <li><a href="#comparison-and-logical-operators" id="toc-comparison-and-logical-operators" class="nav-link" data-scroll-target="#comparison-and-logical-operators"><span class="header-section-number">6.2</span> Comparison and logical operators</a></li>
-  <li><a href="#taking-user-input-with-input" id="toc-taking-user-input-with-input" class="nav-link" data-scroll-target="#taking-user-input-with-input"><span class="header-section-number">6.3</span> Taking user input with input()</a></li>
-  <li><a href="#project-1-simple-temperature-converter" id="toc-project-1-simple-temperature-converter" class="nav-link" data-scroll-target="#project-1-simple-temperature-converter"><span class="header-section-number">6.4</span> Project 1: Simple Temperature Converter</a></li>
-  <li><a href="#convert-between-celsius-fahrenheit-and-kelvin" id="toc-convert-between-celsius-fahrenheit-and-kelvin" class="nav-link" data-scroll-target="#convert-between-celsius-fahrenheit-and-kelvin"><span class="header-section-number">6.5</span> Convert between Celsius, Fahrenheit, and Kelvin</a></li>
-  <li><a href="#use-input-from-the-user-and-perform-arithmetic-operations" id="toc-use-input-from-the-user-and-perform-arithmetic-operations" class="nav-link" data-scroll-target="#use-input-from-the-user-and-perform-arithmetic-operations"><span class="header-section-number">6.6</span> Use input from the user and perform arithmetic operations</a></li>
-  <li><a href="#format-and-display-the-result" id="toc-format-and-display-the-result" class="nav-link" data-scroll-target="#format-and-display-the-result"><span class="header-section-number">6.7</span> Format and display the result</a></li>
+  <li><a href="#what-are-operators-why-do-we-need-them" id="toc-what-are-operators-why-do-we-need-them" class="nav-link active" data-scroll-target="#what-are-operators-why-do-we-need-them"><span class="header-section-number">6.1</span> What Are Operators? Why Do We Need Them?</a>
+  <ul class="collapse">
+  <li><a href="#basic-operators" id="toc-basic-operators" class="nav-link" data-scroll-target="#basic-operators"><span class="header-section-number">6.1.1</span> Basic Operators</a></li>
+  <li><a href="#advanced-operators" id="toc-advanced-operators" class="nav-link" data-scroll-target="#advanced-operators"><span class="header-section-number">6.1.2</span> Advanced Operators</a></li>
+  </ul></li>
+  <li><a href="#arithmetic-operators-in-python" id="toc-arithmetic-operators-in-python" class="nav-link" data-scroll-target="#arithmetic-operators-in-python"><span class="header-section-number">6.2</span> Arithmetic Operators in Python</a>
+  <ul class="collapse">
+  <li><a href="#addition" id="toc-addition" class="nav-link" data-scroll-target="#addition"><span class="header-section-number">6.2.1</span> <strong>Addition (<code>+</code>)</strong></a></li>
+  <li><a href="#subtraction--" id="toc-subtraction--" class="nav-link" data-scroll-target="#subtraction--"><span class="header-section-number">6.2.2</span> Subtraction (<code>-</code>)</a></li>
+  <li><a href="#division" id="toc-division" class="nav-link" data-scroll-target="#division"><span class="header-section-number">6.2.3</span> Division (<code>/</code>)</a></li>
+  <li><a href="#floor-division" id="toc-floor-division" class="nav-link" data-scroll-target="#floor-division"><span class="header-section-number">6.2.4</span> Floor Division (<code>//</code>)</a></li>
+  <li><a href="#modulus" id="toc-modulus" class="nav-link" data-scroll-target="#modulus"><span class="header-section-number">6.2.5</span> Modulus (%)</a></li>
+  <li><a href="#exponentiation" id="toc-exponentiation" class="nav-link" data-scroll-target="#exponentiation"><span class="header-section-number">6.2.6</span> Exponentiation (<code>**</code>)</a></li>
+  <li><a href="#operator-precedence-the-order-of-operations" id="toc-operator-precedence-the-order-of-operations" class="nav-link" data-scroll-target="#operator-precedence-the-order-of-operations"><span class="header-section-number">6.2.7</span> Operator Precedence – The Order of Operations</a></li>
+  <li><a href="#using-e-in-arithmetic-operations" id="toc-using-e-in-arithmetic-operations" class="nav-link" data-scroll-target="#using-e-in-arithmetic-operations"><span class="header-section-number">6.2.8</span> Using <code>e</code> in Arithmetic Operations</a></li>
+  <li><a href="#summary-of-arithmetic-operators" id="toc-summary-of-arithmetic-operators" class="nav-link" data-scroll-target="#summary-of-arithmetic-operators"><span class="header-section-number">6.2.9</span> Summary of Arithmetic Operators</a></li>
+  </ul></li>
+  <li><a href="#basic-operators-and-input" id="toc-basic-operators-and-input" class="nav-link" data-scroll-target="#basic-operators-and-input"><span class="header-section-number">7</span> Basic Operators and Input</a>
+  <ul class="collapse">
+  <li><a href="#arithmetic-operators--" id="toc-arithmetic-operators--" class="nav-link" data-scroll-target="#arithmetic-operators--"><span class="header-section-number">7.1</span> Arithmetic operators (+, -, *, /)</a></li>
+  <li><a href="#comparison-and-logical-operators" id="toc-comparison-and-logical-operators" class="nav-link" data-scroll-target="#comparison-and-logical-operators"><span class="header-section-number">7.2</span> Comparison and logical operators</a></li>
+  <li><a href="#taking-user-input-with-input" id="toc-taking-user-input-with-input" class="nav-link" data-scroll-target="#taking-user-input-with-input"><span class="header-section-number">7.3</span> Taking user input with input()</a></li>
+  <li><a href="#project-1-simple-temperature-converter" id="toc-project-1-simple-temperature-converter" class="nav-link" data-scroll-target="#project-1-simple-temperature-converter"><span class="header-section-number">7.4</span> Project 1: Simple Temperature Converter</a></li>
+  <li><a href="#convert-between-celsius-fahrenheit-and-kelvin" id="toc-convert-between-celsius-fahrenheit-and-kelvin" class="nav-link" data-scroll-target="#convert-between-celsius-fahrenheit-and-kelvin"><span class="header-section-number">7.5</span> Convert between Celsius, Fahrenheit, and Kelvin</a></li>
+  <li><a href="#use-input-from-the-user-and-perform-arithmetic-operations" id="toc-use-input-from-the-user-and-perform-arithmetic-operations" class="nav-link" data-scroll-target="#use-input-from-the-user-and-perform-arithmetic-operations"><span class="header-section-number">7.6</span> Use input from the user and perform arithmetic operations</a></li>
+  <li><a href="#format-and-display-the-result" id="toc-format-and-display-the-result" class="nav-link" data-scroll-target="#format-and-display-the-result"><span class="header-section-number">7.7</span> Format and display the result</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Part 1 - Getting Started</a></li><li class="breadcrumb-item"><a href="./chapter5.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators and Input</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Part 1 - Getting Started</a></li><li class="breadcrumb-item"><a href="./chapter5.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators in Python</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators and Input</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Operators in Python</span></h1>
 </div>
 
 
@@ -213,28 +274,437 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arithmetic-operators--" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="arithmetic-operators--"><span class="header-section-number">6.1</span> Arithmetic operators (+, -, *, /)</h2>
+<p>Before we jump into coding, let’s take a moment to understand <strong>operators</strong>—what they are, what they do, and why they are essential in programming.</p>
+<section id="what-are-operators-why-do-we-need-them" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="what-are-operators-why-do-we-need-them"><span class="header-section-number">6.1</span> What Are Operators? Why Do We Need Them?</h2>
+<p>Operators are special symbols in Python that allow us to perform computations and manipulate data. They are the building blocks of expressions and help us execute mathematical operations, assign values to variables, compare values, and even make logical decisions in our programs. Without operators, coding would be extremely limited, as we wouldn’t be able to perform calculations, check conditions, or control program flow effectively.</p>
+<section id="basic-operators" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="basic-operators"><span class="header-section-number">6.1.1</span> Basic Operators</h3>
+<p>These fundamental operators are widely used in almost every Python program:</p>
+<ul>
+<li><strong>Arithmetic Operators</strong> – Perform mathematical operations like addition, subtraction, multiplication, and division (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>).<br>
+</li>
+<li><strong>Assignment Operators</strong> – Assign values to variables (<code>=</code>, <code>+=</code>, <code>-=</code>).<br>
+</li>
+<li><strong>Comparison Operators</strong> – Compare two values and return <code>True</code> or <code>False</code> (<code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>).<br>
+</li>
+<li><strong>Logical Operators</strong> – Combine boolean values and control flow (<code>and</code>, <code>or</code>, <code>not</code>).</li>
+</ul>
 </section>
-<section id="comparison-and-logical-operators" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="comparison-and-logical-operators"><span class="header-section-number">6.2</span> Comparison and logical operators</h2>
+<section id="advanced-operators" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="advanced-operators"><span class="header-section-number">6.1.2</span> Advanced Operators</h3>
+<p>Some operators require a deeper understanding of programming concepts and will be introduced later in the book:</p>
+<ul>
+<li><strong>Bitwise Operators</strong> – Perform operations at the binary level (<code>&amp;</code>, <code>|</code>, <code>^</code>, <code>~</code>).<br>
+</li>
+<li><strong>Membership Operators</strong> – Check if a value exists within a sequence (<code>in</code>, <code>not in</code>).<br>
+</li>
+<li><strong>Identity Operators</strong> – Compare memory locations of two objects (<code>is</code>, <code>is not</code>).</li>
+</ul>
+<p>We will begin by exploring <strong>arithmetic operators</strong>, followed by <strong>assignment operators</strong>, as they are foundational to understanding more advanced operations in Python.</p>
 </section>
-<section id="taking-user-input-with-input" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="taking-user-input-with-input"><span class="header-section-number">6.3</span> Taking user input with input()</h2>
 </section>
-<section id="project-1-simple-temperature-converter" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="project-1-simple-temperature-converter"><span class="header-section-number">6.4</span> Project 1: Simple Temperature Converter</h2>
+<section id="arithmetic-operators-in-python" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="arithmetic-operators-in-python"><span class="header-section-number">6.2</span> Arithmetic Operators in Python</h2>
+<p>Arithmetic operators are the most basic and frequently used operators. They allow you to perform mathematical calculations such as addition, subtraction, multiplication, and division. Let’s go over each one with examples to see how they work.</p>
+<section id="addition" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="addition"><span class="header-section-number">6.2.1</span> <strong>Addition (<code>+</code>)</strong></h3>
+<p>The addition operator is used to add two values. It works with numbers (integers and floats) and even with strings (by concatenating them).</p>
+<div id="830ac5b0" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Integer addition</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>15</code></pre>
+</div>
+</div>
+<div id="3f396821" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Float addition</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">10.5</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">4.3</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> x <span class="op">+</span> y</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>14.8</code></pre>
+</div>
+</div>
+<div id="9eb8c76d" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># String addition (concatenation)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>greeting <span class="op">=</span> <span class="st">"Hello, "</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Almighty Python!"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>message <span class="op">=</span> greeting <span class="op">+</span> name</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(message)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hello, Almighty Python!</code></pre>
+</div>
+</div>
 </section>
-<section id="convert-between-celsius-fahrenheit-and-kelvin" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="convert-between-celsius-fahrenheit-and-kelvin"><span class="header-section-number">6.5</span> Convert between Celsius, Fahrenheit, and Kelvin</h2>
+<section id="subtraction--" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="subtraction--"><span class="header-section-number">6.2.2</span> Subtraction (<code>-</code>)</h3>
+<p>The subtraction operator (<code>-</code>) is used to subtract one value from another. It can also be used with both integers and floats.</p>
+<div id="51ba1c23" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Integer Subtraction</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> a <span class="op">-</span> b</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result) </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> b <span class="op">-</span> a</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>7
+-7</code></pre>
+</div>
+</div>
+<div id="a2283525" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Float Subtraction</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> a <span class="op">-</span> b</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result) </span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> b <span class="op">-</span> a</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>7
+-7</code></pre>
+</div>
+</div>
+<div id="4f14c101" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mixed Type Subtraction</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="fl">1.2</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> a <span class="op">-</span> b</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result) </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> b <span class="op">-</span> a</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0.8
+-0.8</code></pre>
+</div>
+</div>
 </section>
-<section id="use-input-from-the-user-and-perform-arithmetic-operations" class="level2" data-number="6.6">
-<h2 data-number="6.6" class="anchored" data-anchor-id="use-input-from-the-user-and-perform-arithmetic-operations"><span class="header-section-number">6.6</span> Use input from the user and perform arithmetic operations</h2>
+<section id="division" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="division"><span class="header-section-number">6.2.3</span> Division (<code>/</code>)</h3>
+<p>The division operator is used to divide one number by another. In Python, it always returns a float value, even if the result is a whole number.</p>
+<div id="14d494c3" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Integer division</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> a <span class="op">/</span> b</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co">#(Note that it's a float)</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Float division</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">10.5</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">4.3</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> x <span class="op">/</span> y</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>2.0
+2.441860465116279</code></pre>
+</div>
+</div>
 </section>
-<section id="format-and-display-the-result" class="level2" data-number="6.7">
-<h2 data-number="6.7" class="anchored" data-anchor-id="format-and-display-the-result"><span class="header-section-number">6.7</span> Format and display the result</h2>
+<section id="floor-division" class="level3" data-number="6.2.4">
+<h3 data-number="6.2.4" class="anchored" data-anchor-id="floor-division"><span class="header-section-number">6.2.4</span> Floor Division (<code>//</code>)</h3>
+<p>The floor division operator returns the largest integer less than or equal to the result of division. It essentially rounds down the result.</p>
+<div id="bcdc440b" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Integer floor division</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> a <span class="op">//</span> b</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Float floor division</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">10.5</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">4.3</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> x <span class="op">//</span> y</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>3
+2.0</code></pre>
+</div>
+</div>
+</section>
+<section id="modulus" class="level3" data-number="6.2.5">
+<h3 data-number="6.2.5" class="anchored" data-anchor-id="modulus"><span class="header-section-number">6.2.5</span> Modulus (%)</h3>
+<p>The modulus operator returns the remainder of the division of two numbers. This is useful for determining if a number is divisible by another or for wrapping around values in cyclic operations (like circular buffers).</p>
+<div id="5ce47aed" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Integer modulus</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> a <span class="op">%</span> b</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co"># 10 divided by 3 leaves a remainder of 1</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Float modulus</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">10.5</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">4.3</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> x <span class="op">%</span> y</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  <span class="co"># 10.5 divided by 4.3 leaves a remainder of 1.9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1
+1.9000000000000004</code></pre>
+</div>
+</div>
+</section>
+<section id="exponentiation" class="level3" data-number="6.2.6">
+<h3 data-number="6.2.6" class="anchored" data-anchor-id="exponentiation"><span class="header-section-number">6.2.6</span> Exponentiation (<code>**</code>)</h3>
+<p>The exponentiation operator raises the first number to the power of the second number.</p>
+<div id="fc635ca0" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Integer exponentiation</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> a <span class="op">**</span> b <span class="co"># 2 raised to the power of 3</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  </span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Float exponentiation</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">2.5</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">5.5</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> x <span class="op">**</span> y <span class="co"># 2.5 raised to the power of 5.5</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)  </span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Mixed exponentiation</span></span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="fl">2.5</span></span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> a <span class="op">**</span> b <span class="co"># (3 raised to the power of 2.5)</span></span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8
+154.40808887540913
+15.588457268119896</code></pre>
+</div>
+</div>
+</section>
+<section id="operator-precedence-the-order-of-operations" class="level3" data-number="6.2.7">
+<h3 data-number="6.2.7" class="anchored" data-anchor-id="operator-precedence-the-order-of-operations"><span class="header-section-number">6.2.7</span> Operator Precedence – The Order of Operations</h3>
+<p>In Python, like in regular mathematics, arithmetic operators have an order in which they are evaluated. This order is crucial for understanding how complex expressions are computed. While we will focus on arithmetic operators for now, keep in mind that the order of operations applies to all operators in Python, and we’ll revisit it as we explore more complex operations later in the book.</p>
+<p>Here is the order of precedence for the basic arithmetic operators:</p>
+<ol type="1">
+<li><p><strong>Exponentiation (<code>**</code>)</strong><br>
+The exponentiation operator is evaluated first. It raises a number to the power of another.</p></li>
+<li><p><strong>Multiplication (<code>*</code>), Division (<code>/</code>), Floor Division (<code>//</code>), Modulus (<code>%</code>)</strong><br>
+These operators are evaluated next, from left to right.</p></li>
+<li><p><strong>Addition (<code>+</code>), Subtraction (<code>-</code>)</strong><br>
+Finally, addition and subtraction are evaluated, also from left to right.</p></li>
+</ol>
+<section id="example-of-operator-precedence" class="level4" data-number="6.2.7.1">
+<h4 data-number="6.2.7.1" class="anchored" data-anchor-id="example-of-operator-precedence"><span class="header-section-number">6.2.7.1</span> Example of Operator Precedence</h4>
+<p>Let’s see how this works in action:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> <span class="dv">3</span> <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> <span class="dv">5</span> <span class="op">-</span> <span class="dv">10</span> <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="heres-how-the-expression-is-evaluated" class="level4" data-number="6.2.7.2">
+<h4 data-number="6.2.7.2" class="anchored" data-anchor-id="heres-how-the-expression-is-evaluated"><span class="header-section-number">6.2.7.2</span> Here’s how the expression is evaluated:</h4>
+<ul>
+<li>First, 2 * 5 is computed (multiplication).</li>
+<li>Then, 10 / 2 is computed (division).</li>
+<li>Next, the addition and subtraction are performed from left to right: 3 + (result of multiplication) and then subtracting the division result. Thus, the order is followed strictly as per the rules of precedence, and the result will be 10.0.</li>
+</ul>
+</section>
+<section id="parentheses-override-the-precedence" class="level4" data-number="6.2.7.3">
+<h4 data-number="6.2.7.3" class="anchored" data-anchor-id="parentheses-override-the-precedence"><span class="header-section-number">6.2.7.3</span> Parentheses Override the Precedence</h4>
+<p>You can control the order of operations in your code by using parentheses () to change the default precedence. Anything inside parentheses is computed first.</p>
+<div id="9bce9e79" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> (<span class="dv">3</span> <span class="op">+</span> <span class="dv">2</span>) <span class="op">*</span> (<span class="dv">5</span> <span class="op">-</span> <span class="dv">10</span> <span class="op">/</span> <span class="dv">2</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0.0</code></pre>
+</div>
+</div>
+<p>Here, the addition and subtraction are computed first due to parentheses, followed by multiplication and division.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This section introduces the general order of arithmetic operations in Python. As we advance and introduce more operators, you’ll need to remember that operator precedence determines how expressions are evaluated, and we will come back to this concept when we cover more complex topics in the book.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="using-e-in-arithmetic-operations" class="level3" data-number="6.2.8">
+<h3 data-number="6.2.8" class="anchored" data-anchor-id="using-e-in-arithmetic-operations"><span class="header-section-number">6.2.8</span> Using <code>e</code> in Arithmetic Operations</h3>
+<p>In Python, the letter <code>e</code> is often used in scientific notation to represent powers of 10. It is not an operator, but rather a part of a number written in exponential form. The <code>e</code> can be used in arithmetic operations just like any other number. The expression <code>2e3</code> means ( 2 ^3 ), which is equal to 2000.</p>
+<section id="example" class="level4" data-number="6.2.8.1">
+<h4 data-number="6.2.8.1" class="anchored" data-anchor-id="example"><span class="header-section-number">6.2.8.1</span> Example:</h4>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using e for scientific notation</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> <span class="fl">2e3</span>  <span class="co"># 2 * 10^3 = 2000</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="combining-e-with-other-arithmetic-operators" class="level4" data-number="6.2.8.2">
+<h4 data-number="6.2.8.2" class="anchored" data-anchor-id="combining-e-with-other-arithmetic-operators"><span class="header-section-number">6.2.8.2</span> Combining <code>e</code> with other Arithmetic Operators</h4>
+<p>You can also perform arithmetic operations with numbers written in scientific notation. Let’s see how this works with different operators:</p>
+<div id="ab996228" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding, subtracting, multiplying and dividing with e notation</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>add_result <span class="op">=</span> <span class="fl">2e3</span> <span class="op">+</span> <span class="fl">5e2</span>  <span class="co"># Adding 2000 + 500</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>sub_result <span class="op">=</span> <span class="fl">5e3</span> <span class="op">-</span> <span class="fl">1e3</span>  <span class="co"># Subtracting 5000 - 1000</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>mul_result <span class="op">=</span> <span class="fl">3e2</span> <span class="op">*</span> <span class="fl">4e1</span>  <span class="co"># Multiplying 300 * 40</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>div_result <span class="op">=</span> <span class="fl">1e4</span> <span class="op">/</span> <span class="fl">2e2</span>  <span class="co"># Dividing 10000 / 200</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>small_value <span class="op">=</span> <span class="fl">1e-4</span>  <span class="co"># A small value, equivalent to 0.0001</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Addition:"</span>, add_result)    </span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Subtraction:"</span>, sub_result)</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Multiplication:"</span>, mul_result) </span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Division:"</span>, div_result)  </span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Small value:"</span>, small_value)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Addition: 2500.0
+Subtraction: 4000.0
+Multiplication: 12000.0
+Division: 50.0
+Small value: 0.0001</code></pre>
+</div>
+</div>
+</section>
+<section id="exponentiation-with-e" class="level4" data-number="6.2.8.3">
+<h4 data-number="6.2.8.3" class="anchored" data-anchor-id="exponentiation-with-e"><span class="header-section-number">6.2.8.3</span> Exponentiation with <code>e</code></h4>
+<p>When used with exponentiation (<code>**</code>), <code>e</code> represents powers of 10, and the operation behaves like normal arithmetic:</p>
+<div id="96bfbc91" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>exp_result <span class="op">=</span> <span class="fl">2e3</span> <span class="op">**</span> <span class="dv">2</span>  <span class="co"># 2000^2</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(exp_result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>4000000.0</code></pre>
+</div>
+</div>
+</section>
+<section id="why-use-e" class="level4" data-number="6.2.8.4">
+<h4 data-number="6.2.8.4" class="anchored" data-anchor-id="why-use-e"><span class="header-section-number">6.2.8.4</span> Why Use <code>e</code>?</h4>
+<p>Using <code>e</code> allows us to easily handle large or small numbers without typing out all the zeros. It’s especially helpful in scientific and engineering calculations where such numbers frequently occur.</p>
+</section>
+</section>
+<section id="summary-of-arithmetic-operators" class="level3" data-number="6.2.9">
+<h3 data-number="6.2.9" class="anchored" data-anchor-id="summary-of-arithmetic-operators"><span class="header-section-number">6.2.9</span> Summary of Arithmetic Operators</h3>
+<p>In this chapter, we explored the core arithmetic operators in Python and how they are used to perform calculations.</p>
+<section id="key-points" class="level4" data-number="6.2.9.1">
+<h4 data-number="6.2.9.1" class="anchored" data-anchor-id="key-points"><span class="header-section-number">6.2.9.1</span> Key Points</h4>
+<ul>
+<li><p><strong>Order of Operations</strong>: Python follows a specific order of precedence when evaluating arithmetic expressions. Exponentiation (<code>**</code>) is evaluated first, followed by multiplication, division, floor division, and modulus, and finally, addition and subtraction. Parentheses can be used to control the order of evaluation.</p></li>
+<li><p><strong>Using <code>e</code> in Arithmetic</strong>: We also discussed how <code>e</code> is used in Python to represent numbers in scientific notation (e.g., <code>2e3</code> represents 2000). We demonstrated how to perform arithmetic with scientific notation and how <code>e</code> can be combined with other operators like addition, subtraction, multiplication, division, and exponentiation.</p></li>
+</ul>
+</section>
+<section id="arithmetic-operators-table" class="level4" data-number="6.2.9.2">
+<h4 data-number="6.2.9.2" class="anchored" data-anchor-id="arithmetic-operators-table"><span class="header-section-number">6.2.9.2</span> Arithmetic Operators Table</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 48%">
+<col style="width: 30%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>+</code></td>
+<td>Addition: Adds two operands.</td>
+<td><code>5 + 3</code></td>
+<td><code>8</code></td>
+</tr>
+<tr class="even">
+<td><code>-</code></td>
+<td>Subtraction: Subtracts the second operand from the first.</td>
+<td><code>5 - 3</code></td>
+<td><code>2</code></td>
+</tr>
+<tr class="odd">
+<td><code>*</code></td>
+<td>Multiplication: Multiplies two operands.</td>
+<td><code>5 * 3</code></td>
+<td><code>15</code></td>
+</tr>
+<tr class="even">
+<td><code>/</code></td>
+<td>Division: Divides the first operand by the second. Returns float.</td>
+<td><code>5 / 3</code></td>
+<td><code>1.6667...</code></td>
+</tr>
+<tr class="odd">
+<td><code>//</code></td>
+<td>Floor Division: Divides and returns the largest integer less than or equal to the result.</td>
+<td><code>5 // 3</code></td>
+<td><code>1</code></td>
+</tr>
+<tr class="even">
+<td><code>%</code></td>
+<td>Modulus: Returns the remainder of a division operation.</td>
+<td><code>5 % 3</code></td>
+<td><code>2</code></td>
+</tr>
+<tr class="odd">
+<td><code>**</code></td>
+<td>Exponentiation: Raises the first operand to the power of the second.</td>
+<td><code>2 ** 3</code></td>
+<td><code>8</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="important-notes" class="level4" data-number="6.2.9.3">
+<h4 data-number="6.2.9.3" class="anchored" data-anchor-id="important-notes"><span class="header-section-number">6.2.9.3</span> Important Notes:</h4>
+<ul>
+<li><strong>Integer Division (<code>//</code>)</strong> always returns the largest whole number less than or equal to the result of division.</li>
+<li><strong>Modulus (<code>%</code>)</strong> can be used to check divisibility and is commonly used in algorithms like checking if a number is even or odd.</li>
+<li><strong>Exponentiation (<code>**</code>)</strong> is often used for calculating powers, square roots, and mathematical functions.</li>
+</ul>
+</section>
+<section id="next-steps" class="level4" data-number="6.2.9.4">
+<h4 data-number="6.2.9.4" class="anchored" data-anchor-id="next-steps"><span class="header-section-number">6.2.9.4</span> Next Steps</h4>
+<p>As you continue to experiment with these operators, remember that these foundational concepts will help you tackle more advanced topics later in the book. You will explore more operators and complex expressions as we build on this knowledge.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Feel free to modify the examples and experiment with different operations. Create your own expressions and see how Python handles them. The more you play with these operators, the more comfortable you will become using them in real-world applications.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="basic-operators-and-input" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Basic Operators and Input</h1>
+<section id="arithmetic-operators--" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="arithmetic-operators--"><span class="header-section-number">7.1</span> Arithmetic operators (+, -, *, /)</h2>
+</section>
+<section id="comparison-and-logical-operators" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="comparison-and-logical-operators"><span class="header-section-number">7.2</span> Comparison and logical operators</h2>
+</section>
+<section id="taking-user-input-with-input" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="taking-user-input-with-input"><span class="header-section-number">7.3</span> Taking user input with input()</h2>
+</section>
+<section id="project-1-simple-temperature-converter" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="project-1-simple-temperature-converter"><span class="header-section-number">7.4</span> Project 1: Simple Temperature Converter</h2>
+</section>
+<section id="convert-between-celsius-fahrenheit-and-kelvin" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="convert-between-celsius-fahrenheit-and-kelvin"><span class="header-section-number">7.5</span> Convert between Celsius, Fahrenheit, and Kelvin</h2>
+</section>
+<section id="use-input-from-the-user-and-perform-arithmetic-operations" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="use-input-from-the-user-and-perform-arithmetic-operations"><span class="header-section-number">7.6</span> Use input from the user and perform arithmetic operations</h2>
+</section>
+<section id="format-and-display-the-result" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="format-and-display-the-result"><span class="header-section-number">7.7</span> Format and display the result</h2>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -662,8 +1132,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter6.html" class="pagination-link" aria-label="ty">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">ty</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

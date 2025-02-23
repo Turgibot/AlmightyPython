@@ -1,6 +1,4 @@
----
-css: style/general.css 
----
+
 # Setting Up Python on Your Machine
 
 Before we can start writing Python code, we need to make sure that Python is installed and properly set up on your computer. Whether you're using **Windows**, **macOS**, or **Linux**, the process is straightforward, but there are some important details to take note of.
@@ -28,13 +26,13 @@ First, let's check if Python is already installed on your machine. This can be d
         <span class="prompt">user@computer&gt;</span> <span class="command">Python 3.10.x</span><br>
     </div>
     ```
+    If not, you'll see an error message telling you that `python` is not recognized.
 
 ::: {.callout-tip}
 - **Don’t worry if the version number isn’t exactly what you see in the examples.** It’s perfectly fine if you see **Python 3.11** or **Python 3.12**—those will work great for this book!  
 - **What’s important is that you’re using Python 3.10 and higher.** Avoid using Python versions **lower than 3.10**, as some newer features or improvements might not work properly in older versions.  
 :::
 
-    If not, you'll see an error message telling you that `python` is not recognized.
 
 ## Step 2: Installing Python
 

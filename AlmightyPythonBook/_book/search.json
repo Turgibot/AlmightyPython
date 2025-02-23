@@ -129,7 +129,7 @@
     "href": "chapter2.html#step-1-check-if-python-is-already-installed",
     "title": "3  Setting Up Python on Your Machine",
     "section": "",
-    "text": "Windows - open the Command Prompt by pressing Win-RWin-R, typing cmd, and hitting EnterEnter. macOS - open the Terminal by pressing Cmd+Alt+TCmd+Alt+T. Linux - open the Terminal by pressing Ctrl+Alt+TCtrl+Alt+T.\nType the following command and press Enter:\n \n     user@computer&gt; python --version\n \nIf Python is installed, you should see something like:\n\n    user@computer&gt; Python 3.10.x\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nDon’t worry if the version number isn’t exactly what you see in the examples. It’s perfectly fine if you see Python 3.11 or Python 3.12—those will work great for this book!\n\nWhat’s important is that you’re using Python 3.10 and higher. Avoid using Python versions lower than 3.10, as some newer features or improvements might not work properly in older versions.\n\n\n\n\nIf not, you'll see an error message telling you that `python` is not recognized.",
+    "text": "Windows - open the Command Prompt by pressing Win-RWin-R, typing cmd, and hitting EnterEnter. macOS - open the Terminal by pressing Cmd+Alt+TCmd+Alt+T. Linux - open the Terminal by pressing Ctrl+Alt+TCtrl+Alt+T.\nType the following command and press Enter:\n \n     user@computer&gt; python --version\n \nIf Python is installed, you should see something like:\n\n    user@computer&gt; Python 3.10.x\n\nIf not, you’ll see an error message telling you that python is not recognized.\n\n\n\n\n\n\n\nTip\n\n\n\n\nDon’t worry if the version number isn’t exactly what you see in the examples. It’s perfectly fine if you see Python 3.11 or Python 3.12—those will work great for this book!\n\nWhat’s important is that you’re using Python 3.10 and higher. Avoid using Python versions lower than 3.10, as some newer features or improvements might not work properly in older versions.",
     "crumbs": [
       "Part 1 - Getting Started",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
@@ -144,301 +144,6 @@
     "crumbs": [
       "Part 1 - Getting Started",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#step-3-verify-python-is-working",
-    "href": "chapter2.html#step-3-verify-python-is-working",
-    "title": "3  Setting Up Python on Your Machine",
-    "section": "3.3 Step 3: Verify Python is Working",
-    "text": "3.3 Step 3: Verify Python is Working\nAfter installing Python, let’s verify that it’s working properly by running a simple program.\n\nOpen the Command Prompt (Windows) or Terminal (macOS/Linux).\nType the following command and press Enter:\npython3\nThis should open the Python interpreter. You’ll see something like this:\nPython 3.x.x (default, ....) \n[GCC ....] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n&gt;&gt;&gt;\nYou can now type in Python code directly here. Try this: print(\"Hello, Python!\") You should see: Hello, Python!\nTo exit the Python interpreter, press Ctrl + Z",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#common-problems-troubleshooting",
-    "href": "chapter2.html#common-problems-troubleshooting",
-    "title": "3  Setting Up Python on Your Machine",
-    "section": "3.4 Common Problems & Troubleshooting",
-    "text": "3.4 Common Problems & Troubleshooting\n\nProblem 1: Python is not recognized as a command\n\nIf you encounter this error on Windows, it’s likely because you didn’t check the “Add Python to PATH” option during installation. You can fix this by reinstalling Python and ensuring this option is selected.\n\nProblem 2: python3 command not found on macOS/Linux\n\nIf you receive an error that the python3 command is not found, make sure Python 3 is installed properly. On macOS, you can use Homebrew, and on Linux, you can install Python 3 using the package manager.\n\nProblem 3: Python installation is incomplete or failed\n\nOn Windows, ensure that you have the “Add Python to PATH” checkbox checked during installation.\nOn macOS or Linux, use the python3 --version command to verify Python 3 is installed. If not, try re-running the installation steps.\n\nProblem 4: Python opens but commands don’t execute properly\n\nThis might happen if there is a corrupted Python installation. You can try uninstalling Python and reinstalling it.\nEnsure that you are using the correct command (python3 on macOS/Linux, python or python3 on Windows).",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#next-steps",
-    "href": "chapter2.html#next-steps",
-    "title": "3  Setting Up Python on Your Machine",
-    "section": "3.5 Next Steps",
-    "text": "3.5 Next Steps\nNow that you’ve set up Python on your machine and verified it’s working, we can move on to writing your first Python program. In the next section, we’ll dive into Python syntax, variables, and the basics of writing Python code.",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html",
-    "href": "chapter3.html",
-    "title": "4  Setting Up the Coding Environment",
-    "section": "",
-    "text": "4.1 Step 1: Installing VSCode\nIn this chapter, we’ll set up everything you need to start coding in Python. To make things simple and fun, we’ll use Visual Studio Code (VSCode)—a free, lightweight, and powerful editor. If you’re new to coding, don’t worry. We’ll guide you step by step. By the end of this chapter, you’ll be all set to write and run your first Python program!\nAlthough we’ll focus on using VSCode, feel free to use another editor if you prefer. The steps might differ slightly, but the core concepts remain the same.\nOnce installed, launch VSCode. You should see the welcome screen!",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#variables-and-assignment",
-    "href": "chapter3.html#variables-and-assignment",
-    "title": "4  Python Syntax and Variables",
-    "section": "4.2 Variables and assignment",
-    "text": "4.2 Variables and assignment",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#type-conversions-int-float-str",
-    "href": "chapter3.html#type-conversions-int-float-str",
-    "title": "4  Python Syntax and Variables",
-    "section": "4.3 Type conversions (int(), float(), str())",
-    "text": "4.3 Type conversions (int(), float(), str())",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "5  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Summary</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
-    "crumbs": [
-      "References"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#step-1-installing-vscode",
-    "href": "chapter3.html#step-1-installing-vscode",
-    "title": "4  Setting Up the Coding Environment",
-    "section": "",
-    "text": "Go to the Visual Studio Code website.\nYou’ll see download options for Windows, macOS, and Linux. Click the one for your operating system.\nOnce the download is complete, open the installer and follow the instructions.\n\n\n\n\n\n\n\nTip\n\n\n\n\nWindows: Make sure you check the option to “Add to PATH” during installation. This will make it easier to use VSCode from the command line.\nmacOS: Drag the VSCode icon into your Applications folder.\nLinux: Depending on your distribution, you might need to install it using a package manager (apt, yum, or dnf).\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nPin VSCode to your taskbar or dock for easy access.",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#step-2-installing-python",
-    "href": "chapter3.html#step-2-installing-python",
-    "title": "4  Setting Up the Coding Environment",
-    "section": "4.2 Step 2: Installing Python",
-    "text": "4.2 Step 2: Installing Python\nPython is the language we’ll be using throughout this book. Let’s make sure it’s installed.\n\nOpen a terminal (Command Prompt on Windows, Terminal on macOS/Linux).\nType the following command:\n\n    \n        user@computer&gt; python --version\n    \nIf Python is installed, you’ll see something like:\n    \n        user@computer&gt; Python 3.10.2",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#step-3-verify-that-python-is-working",
-    "href": "chapter2.html#step-3-verify-that-python-is-working",
-    "title": "3  Setting Up Python on Your Machine",
-    "section": "3.3 Step 3: Verify that Python is Working",
-    "text": "3.3 Step 3: Verify that Python is Working\nAfter installing Python, let’s verify that it’s working properly by running a simple program.\n\nOpen the Command Prompt (Windows) or Terminal (macOS/Linux).\nType the following command and press Enter:\n\nuser@computer&gt; python3\n\nThis should open the Python interpreter. You’ll see something like this:\n\nPython 3.10.x (default, ....) \n[GCC ....] on xxxx \nType \"help\", \"copyright\", \"credits\" or \"license\" for more information. \n&gt;&gt;&gt; \n\nYou can now type in Python code directly here. Try this: like this:\n\n&gt;&gt;&gt; print(\"Hello from Almighty Python!\")\n\nYou should see:\n\nHello from Almighty Python!\n\nTo exit the Python interpreter, press Ctrl-ZCtrl-Z",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
-    ]
-  },
-  {
-    "objectID": "chapter4.html",
-    "href": "chapter4.html",
-    "title": "5  Python Syntax and Variables",
-    "section": "",
-    "text": "5.1 Data types: String, Integer, Float, Boolean",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
-    ]
-  },
-  {
-    "objectID": "chapter4.html#variables-and-assignment",
-    "href": "chapter4.html#variables-and-assignment",
-    "title": "5  Python Syntax and Variables",
-    "section": "5.2 Variables and assignment",
-    "text": "5.2 Variables and assignment",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
-    ]
-  },
-  {
-    "objectID": "chapter4.html#type-conversions-int-float-str",
-    "href": "chapter4.html#type-conversions-int-float-str",
-    "title": "5  Python Syntax and Variables",
-    "section": "5.3 Type conversions (int(), float(), str())",
-    "text": "5.3 Type conversions (int(), float(), str())",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
-    ]
-  },
-  {
-    "objectID": "chapter5.html",
-    "href": "chapter5.html",
-    "title": "6  Basic Operators and Input",
-    "section": "",
-    "text": "6.1 Arithmetic operators (+, -, *, /)",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter5.html#comparison-and-logical-operators",
-    "href": "chapter5.html#comparison-and-logical-operators",
-    "title": "6  Basic Operators and Input",
-    "section": "6.2 Comparison and logical operators",
-    "text": "6.2 Comparison and logical operators",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter5.html#taking-user-input-with-input",
-    "href": "chapter5.html#taking-user-input-with-input",
-    "title": "6  Basic Operators and Input",
-    "section": "6.3 Taking user input with input()",
-    "text": "6.3 Taking user input with input()",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter5.html#project-1-simple-temperature-converter",
-    "href": "chapter5.html#project-1-simple-temperature-converter",
-    "title": "6  Basic Operators and Input",
-    "section": "6.4 Project 1: Simple Temperature Converter",
-    "text": "6.4 Project 1: Simple Temperature Converter",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter5.html#convert-between-celsius-fahrenheit-and-kelvin",
-    "href": "chapter5.html#convert-between-celsius-fahrenheit-and-kelvin",
-    "title": "6  Basic Operators and Input",
-    "section": "6.5 Convert between Celsius, Fahrenheit, and Kelvin",
-    "text": "6.5 Convert between Celsius, Fahrenheit, and Kelvin",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter5.html#use-input-from-the-user-and-perform-arithmetic-operations",
-    "href": "chapter5.html#use-input-from-the-user-and-perform-arithmetic-operations",
-    "title": "6  Basic Operators and Input",
-    "section": "6.6 Use input from the user and perform arithmetic operations",
-    "text": "6.6 Use input from the user and perform arithmetic operations",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter5.html#format-and-display-the-result",
-    "href": "chapter5.html#format-and-display-the-result",
-    "title": "6  Basic Operators and Input",
-    "section": "6.7 Format and display the result",
-    "text": "6.7 Format and display the result",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators and Input</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#step-2-verify-your-python-installation",
-    "href": "chapter3.html#step-2-verify-your-python-installation",
-    "title": "4  Setting Up the Coding Environment",
-    "section": "4.2 Step 2: Verify your Python installation",
-    "text": "4.2 Step 2: Verify your Python installation\n\n\n\n\n\n\nNote\n\n\n\nYou may skip this step if you have previously verified python on your machine.\n\n\nPython is the language we’ll be using throughout this book. Let’s make sure it’s installed.\n\nOpen a terminal (Command Prompt on Windows, Terminal on macOS/Linux).\nType the following command:\n\n    user@computer&gt; python --version\n\nIf Python is installed, you’ll see something like:\n\n    user@computer&gt; Python 3.10.x\n\nIf not, you’ll see an error message telling you that python is not recognized. Please refer to the python installation section of this book and return here when done.",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#step-3-configuring-vscode-for-python",
-    "href": "chapter3.html#step-3-configuring-vscode-for-python",
-    "title": "4  Setting Up the Coding Environment",
-    "section": "4.3 Step 3: Configuring VSCode for Python",
-    "text": "4.3 Step 3: Configuring VSCode for Python\nNow that we have Python installed, let’s turn VSCode into a Python powerhouse by installing a few extensions.\n\nOpen VSCode.\nGo to the Extensions view by clicking the Extensions icon on the sidebar or pressing Ctrl+Shift+X (Cmd+Shift+X on macOS).\nSearch for and install the following extensions:\n\n\n4.3.1 Must-Have Extensions:\n\nPython (by Microsoft) – Adds Python support, syntax highlighting, debugging, and IntelliSense.\n\nPylance – Provides advanced IntelliSense and type information.\n\nCode Runner – Run your Python scripts with one click.\n\nBlack – Automatically formats your code to look neat and consistent.\n\nflake8 – Helps catch errors and enforce Python style guidelines.",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#step-4-running-your-first-python-script-in-vscode",
-    "href": "chapter3.html#step-4-running-your-first-python-script-in-vscode",
-    "title": "4  Setting Up the Coding Environment",
-    "section": "4.4 Step 4: Running Your First Python Script in VSCode",
-    "text": "4.4 Step 4: Running Your First Python Script in VSCode\nNow that we have the Python extension installed, let’s test everything to make sure it’s working!\n\nOpen VSCode and create a new file called hello.py.\nType the following code:\nprint(\"Hello, Python!\")\nSave the file (Ctrl+S or Cmd+S).\nTo run your script, follow these steps:\n\nOpen the integrated terminal in VSCode (go to View &gt; Terminal or press Ctrl+`).\nIn the terminal, type the following:\n\npython hello.py\n\nYou should see the following output in the terminal:\nHello, Python!\npgsql Copy Edit\nCongratulations! You’ve just written and executed your first Python program.",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#step-5-common-problems-and-troubleshooting",
-    "href": "chapter3.html#step-5-common-problems-and-troubleshooting",
-    "title": "4  Setting Up the Coding Environment",
-    "section": "4.5 Step 5: Common Problems and Troubleshooting",
-    "text": "4.5 Step 5: Common Problems and Troubleshooting\n\n4.5.1 Problem 1: python Command Not Found\nSolution: Python might not be added to your system’s PATH.\n- Windows: Reinstall Python and check the option to “Add to PATH” during installation.\n- macOS/Linux: Try using python3 instead. If that works, create an alias (alias python=python3).\n\n\n4.5.2 Problem 2: VSCode Doesn’t Detect Python\nSolution:\n1. Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P).\n2. Type Python: Select Interpreter and choose the Python version you installed.\n\n\n4.5.3 Problem 3: Code Runner Doesn’t Work\nSolution: Ensure you’ve installed the Python extension by searching for and installing it from the Extensions view. Save your file with the .py extension.\n\n\n4.5.4 Problem 4: Terminal Shows Permission Denied (macOS/Linux)\nSolution: Check file permissions. Use chmod +x filename.py to make the file executable.",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#final-words",
-    "href": "chapter3.html#final-words",
-    "title": "4  Setting Up the Coding Environment",
-    "section": "4.6 Final Words",
-    "text": "4.6 Final Words\nNow that your environment is ready, you’re all set to begin your Python journey! In the next section, we’ll explore the basics of Python syntax and build your first real-world application. Let’s get coding!",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#step-3-installing-the-python-extension-in-vscode",
-    "href": "chapter3.html#step-3-installing-the-python-extension-in-vscode",
-    "title": "4  Setting Up the Coding Environment",
-    "section": "4.3 Step 3: Installing the Python Extension in VSCode",
-    "text": "4.3 Step 3: Installing the Python Extension in VSCode\nNow that you have VSCode installed, it’s time to make it Python-ready! VSCode is a powerful editor, but it can’t run or understand Python by itself. This is where extensions come in. Extensions are small add-ons that extend the functionality of VSCode to support specific tasks or languages. For Python, the extension we need is called the Python extension.\n\n4.3.1 Installing the Python Extension:\n\nOpen VSCode.\nOn the left sidebar, click on the Extensions icon, or press Ctrl+Shift+X (Cmd+Shift+X on macOS) to open the Extensions view.\nIn the search bar, type Python.\nThe Python extension by Microsoft should be the first result. Click Install.\n\nThe Python extension provides key features like: - Syntax highlighting (color-coding your Python code) - Code completion (helping you type faster and avoid errors) - Integrated debugging (for fixing bugs in your code) - Running Python code directly in the editor\nAfter installing the Python extension, VSCode will be ready to run your Python code.",
-    "crumbs": [
-      "Part 1 - Getting Started",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
     ]
   },
   {
@@ -472,6 +177,323 @@
     "crumbs": [
       "Part 1 - Getting Started",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Setting Up Python on Your Machine</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html",
+    "href": "chapter3.html",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "",
+    "text": "4.1 Step 1: Installing VSCode\nIn this chapter, we’ll set up everything you need to start coding in Python. To make things simple and fun, we’ll use Visual Studio Code (VSCode)—a free, lightweight, and powerful editor. If you’re new to coding, don’t worry. We’ll guide you step by step. By the end of this chapter, you’ll be all set to write and run your first Python program!\nAlthough we’ll focus on using VSCode, feel free to use another editor if you prefer. The steps might differ slightly, but the core concepts remain the same.\nOnce installed, launch VSCode. You should see the welcome screen!",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-1-installing-vscode",
+    "href": "chapter3.html#step-1-installing-vscode",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "",
+    "text": "Go to the Visual Studio Code website.\nYou’ll see download options for Windows, macOS, and Linux. Click the one for your operating system.\nOnce the download is complete, open the installer and follow the instructions.\n\n\n\n\n\n\n\nTip\n\n\n\n\nWindows: Make sure you check the option to “Add to PATH” during installation. This will make it easier to use VSCode from the command line.\nmacOS: Drag the VSCode icon into your Applications folder.\nLinux: Depending on your distribution, you might need to install it using a package manager (apt, yum, or dnf).\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nPin VSCode to your taskbar or dock for easy access.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-2-verify-your-python-installation",
+    "href": "chapter3.html#step-2-verify-your-python-installation",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.2 Step 2: Verify your Python installation",
+    "text": "4.2 Step 2: Verify your Python installation\n\n\n\n\n\n\nNote\n\n\n\nYou may skip this step if you have previously verified python on your machine.\n\n\nPython is the language we’ll be using throughout this book. Let’s make sure it’s installed.\n\nOpen a terminal (Command Prompt on Windows, Terminal on macOS/Linux).\nType the following command:\n\n    user@computer&gt; python --version\n\nIf Python is installed, you’ll see something like:\n\n    user@computer&gt; Python 3.10.x\n\nIf not, you’ll see an error message telling you that python is not recognized. Please refer to the python installation section of this book and return here when done.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-3-installing-the-python-extension-in-vscode",
+    "href": "chapter3.html#step-3-installing-the-python-extension-in-vscode",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.3 Step 3: Installing the Python Extension in VSCode",
+    "text": "4.3 Step 3: Installing the Python Extension in VSCode\nNow that you have VSCode installed, it’s time to make it Python-ready! VSCode is a powerful editor, but it can’t run or understand Python by itself. This is where extensions come in. Extensions are small add-ons that extend the functionality of VSCode to support specific tasks or languages. For Python, the extension we need is called the Python extension.\n\n4.3.1 Installing the Python Extension:\n\nOpen VSCode.\nOn the left sidebar, click on the Extensions icon, or press Ctrl+Shift+X (Cmd+Shift+X on macOS) to open the Extensions view.\nIn the search bar, type Python.\nThe Python extension by Microsoft should be the first result. Click Install.\n\nThe Python extension provides key features like: - Syntax highlighting (color-coding your Python code) - Code completion (helping you type faster and avoid errors) - Integrated debugging (for fixing bugs in your code) - Running Python code directly in the editor\nAfter installing the Python extension, VSCode will be ready to run your Python code.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-4-running-your-first-python-script-in-vscode",
+    "href": "chapter3.html#step-4-running-your-first-python-script-in-vscode",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.4 Step 4: Running Your First Python Script in VSCode",
+    "text": "4.4 Step 4: Running Your First Python Script in VSCode\nNow that we have the Python extension installed, let’s test everything to make sure it’s working!\n\nOpen VSCode and create a new file called hello.py.\nType the following code:\nprint(\"Hello, Almighty Python!\")\nSave the file (Ctrl+S or Cmd+S).\nTo run your script, follow these steps:\n\nOpen the integrated terminal in VSCode (go to View &gt; Terminal or press Ctrl+`).\nIn the terminal, type the following:\n\npython hello.py\n\nYou should see the following output in the terminal:\nHello, Almighty Python!\npgsql Copy Edit\nCongratulations! You’ve just written and executed your first Python program.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#step-5-common-problems-and-troubleshooting",
+    "href": "chapter3.html#step-5-common-problems-and-troubleshooting",
+    "title": "4  Setting Up the Coding Environment",
+    "section": "4.5 Step 5: Common Problems and Troubleshooting",
+    "text": "4.5 Step 5: Common Problems and Troubleshooting\n\n4.5.1 Problem 1: python Command Not Found\nSolution: Python might not be added to your system’s PATH.\n- Windows: Reinstall Python and check the option to “Add to PATH” during installation.\n- macOS/Linux: Try using python3 instead. If that works, create an alias (alias python=python3).\n\n\n4.5.2 Problem 2: VSCode Doesn’t Detect Python\nSolution:\n1. Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P).\n2. Type Python: Select Interpreter and choose the Python version you installed.\n\n\n4.5.3 Problem 3: Code Runner Doesn’t Work\nSolution: Ensure you’ve installed the Python extension by searching for and installing it from the Extensions view. Save your file with the .py extension.\n\n\n4.5.4 Problem 4: Terminal Shows Permission Denied (macOS/Linux)\nSolution: Check file permissions. Use chmod +x filename.py to make the file executable.\n\n\n\n\n\n\n\nNote\n\n\n\nNow that your environment is ready, you’re all set to begin your Python journey! In the next section, we’ll explore the basics of Python syntax and build your first real-world application. Let’s get coding!",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting Up the Coding Environment</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html",
+    "href": "chapter4.html",
+    "title": "5  Python Syntax and Variables",
+    "section": "",
+    "text": "5.1 Comments in Python\nIn this chapter, we’ll cover the basics of Python’s syntax, data types, and how to use variables. These concepts are essential for writing your first Python programs. Remember, the best way to learn is by coding!\nComments are lines in your code that Python ignores when running the program. They are used to explain what the code does, making it easier to understand for yourself and others. Comments can also be used to temporarily disable parts of your code.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html#comments-in-python",
+    "href": "chapter4.html#comments-in-python",
+    "title": "5  Python Syntax and Variables",
+    "section": "",
+    "text": "5.1.1 Single-line Comments\nIn Python, single-line comments start with the # symbol.\n\n# This is a comment\nprint(\"Hello, Almighty Python!\")  # This comment is ignored\n\nHello, Almighty Python!\n\n\n\n\n5.1.2 Multi-line Comments\nPython doesn’t have a specific multi-line comment syntax, but you can use triple quotes (’’’) to create a block of comments.\n\n'''\nThis is a multi-line comment.\nYou can use it to write longer explanations\nor to temporarily disable parts of your code.\n'''\nprint(\"Multi-line comments are helpful!\")\n\nMulti-line comments are helpful!\n\n\n\n\n5.1.3 Why Use Comments?\n\nExplain your code: Help yourself or others understand what the code does.\nDebugging: Comment out parts of the code to isolate problems.\nDocumentation: Make your code more readable and easier to maintain.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html#variables-and-assignment",
+    "href": "chapter4.html#variables-and-assignment",
+    "title": "5  Python Syntax and Variables",
+    "section": "5.2 Variables and Assignment",
+    "text": "5.2 Variables and Assignment\nIn Python, variables are used to store data. You assign a value to a variable using the = symbol. The variable name should be descriptive and follow certain rules (e.g., no spaces or special characters, should not start with a number). Variables have type that depends on the type of data they store. We’ll talk more about data types shortly but for now, take a look at these four variables and note the different types assigned to them.\n\nname = \"Almighty Python\"\nage = 25\nprice = 19.99\nis_cool = True\n\nprint(name)  \nprint(age)   \nprint(price)\nprint(is_cool)\n\nAlmighty Python\n25\n19.99\nTrue",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html#basic-data-types-string-integer-float-boolean",
+    "href": "chapter4.html#basic-data-types-string-integer-float-boolean",
+    "title": "5  Python Syntax and Variables",
+    "section": "5.3 Basic Data Types: String, Integer, Float, Boolean",
+    "text": "5.3 Basic Data Types: String, Integer, Float, Boolean\n\n5.3.1 String (str)\nStrings represent text and are enclosed in quotes ('single' or \"double\").\n\n\n\n\n\n\nTip\n\n\n\nUse triple quotes (\"\"\" or ''') for multi-line text.\n\n\n\nname = 'Almighty Python - Learning about strings'\nquestion = \"What is Python?\"\ndescription = \"\"\"It is a powerful and beginner-friendly programming\nlanguage that supports writing long texts on multiple lines like so.\"\"\"\n\nprint(name)\nprint(question)\nprint(description)\n\nAlmighty Python - Learning about strings\nWhat is Python?\nIt is a powerful and beginner-friendly programming\nlanguage that supports writing long texts on multiple lines like so.\n\n\n\n\n5.3.2 String Concatenation and Repetition\nYou can combine strings using the ++ operator or repeat them using **.\n\nfirst_name = \"Almighty\"\nlast_name = \"Python\"\nfull_name = first_name + \" \" + last_name\nprint(full_name) \n\nrepeated = \"Hi! \" * 3\nprint(repeated)\n\nAlmighty Python\nHi! Hi! Hi! \n\n\n\n\n\n\n\n\nImportant\n\n\n\nYou can do many more operations with strings. Actually string operations are covered in their own section - definitely something to look forward to!\n\n\n\n\n5.3.3 Integer (int)\nAn integer is a whole number without a decimal point. Integers can be positive, negative, or zero.\n\nage = 25\nyear = 2025\nbalance = -100\n\nprint(age + 5)      # Addition\nprint(year - 2000)  # Subtraction\nprint(balance * 2)  # Multiplication\n\n30\n25\n-200\n\n\n\n\n5.3.4 Float (float)\nA float is a number with a decimal point. It is used for precise values like measurements, scientific calculations, or financial data.\n\nprice = 19.99\ntemperature = -10.5\npi = 3.14159\n\nprint(price * 2)         \nprint(temperature + 5)   \nprint(pi + pi)   \n\n39.98\n-5.5\n6.28318\n\n\n\n\n5.3.5 Boolean (bool)\nBooleans represent logical values: True or False. They are used for decision-making and comparisons in your programs.\n\nis_python_fun = True\nis_sky_green = False\n\nprint(is_python_fun)      \nprint(is_sky_green)             \n\nTrue\nFalse\n\n\n\n\n5.3.6 Type converstion and interrogation\nTODO",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html#summary",
+    "href": "chapter4.html#summary",
+    "title": "5  Python Syntax and Variables",
+    "section": "5.4 Summary",
+    "text": "5.4 Summary\nIn this chapter, you’ve learned about Python’s syntax, basic data types, variables, and how to use comments. These are fundamental concepts that will help you build a strong foundation for writing Python programs.\nKey Takeaways:\n\nPython has four main basic data types: str, int, float, and bool.\n\nUse variables to store data and make your code more readable.\n\nComments improve code clarity and help with debugging.\n\n\n\n\n\n\n\nTip\n\n\n\n💡 Remember: Keep experimenting! The best way to learn is by trying different things in your code. Modify the examples, create your own, and observe the results.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Python Syntax and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html",
+    "href": "chapter5.html",
+    "title": "6  Basic Operators in Python",
+    "section": "",
+    "text": "6.1 What Are Operators? Why Do We Need Them?\nBefore we jump into coding, let’s take a moment to understand operators—what they are, what they do, and why they are essential in programming.\nOperators are special symbols in Python that allow us to perform computations and manipulate data. They are the building blocks of expressions and help us execute mathematical operations, assign values to variables, compare values, and even make logical decisions in our programs. Without operators, coding would be extremely limited, as we wouldn’t be able to perform calculations, check conditions, or control program flow effectively.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#what-are-operators-why-do-we-need-them",
+    "href": "chapter5.html#what-are-operators-why-do-we-need-them",
+    "title": "6  Basic Operators in Python",
+    "section": "",
+    "text": "6.1.1 Basic Operators\nThese fundamental operators are widely used in almost every Python program:\n\nArithmetic Operators – Perform mathematical operations like addition, subtraction, multiplication, and division (+, -, *, /).\n\nAssignment Operators – Assign values to variables (=, +=, -=).\n\nComparison Operators – Compare two values and return True or False (==, !=, &lt;, &gt;).\n\nLogical Operators – Combine boolean values and control flow (and, or, not).\n\n\n\n6.1.2 Advanced Operators\nSome operators require a deeper understanding of programming concepts and will be introduced later in the book:\n\nBitwise Operators – Perform operations at the binary level (&, |, ^, ~).\n\nMembership Operators – Check if a value exists within a sequence (in, not in).\n\nIdentity Operators – Compare memory locations of two objects (is, is not).\n\nWe will begin by exploring arithmetic operators, followed by assignment operators, as they are foundational to understanding more advanced operations in Python.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#arithmetic-operators-in-python",
+    "href": "chapter5.html#arithmetic-operators-in-python",
+    "title": "6  Basic Operators in Python",
+    "section": "6.2 Arithmetic Operators in Python",
+    "text": "6.2 Arithmetic Operators in Python\nArithmetic operators are the most basic and frequently used operators. They allow you to perform mathematical calculations such as addition, subtraction, multiplication, and division. Let’s go over each one with examples to see how they work.\n\n6.2.1 Addition (+)\nThe addition operator is used to add two values. It works with numbers (integers and floats) and even with strings (by concatenating them).\n\n# Integer addition\na = 10\nb = 5\nresult = a + b\nprint(result) \n\n15\n\n\n\n# Float addition\nx = 10.5\ny = 4.3\nresult = x + y\nprint(result) \n\n14.8\n\n\n\n# String addition (concatenation)\ngreeting = \"Hello, \"\nname = \"Almighty Python!\"\nmessage = greeting + name\nprint(message)  \n\nHello, Almighty Python!\n\n\n\n\n6.2.2 Subtraction (-)\nThe subtraction operator (-) is used to subtract one value from another. It can also be used with both integers and floats.\n\n# Integer Subtraction\na = 10\nb = 3\nresult = a - b\nprint(result) \n\nresult = b - a\nprint(result)\n\n7\n-7\n\n\n\n# Float Subtraction\na = 10\nb = 3\nresult = a - b\nprint(result) \n\nresult = b - a\nprint(result)\n\n7\n-7\n\n\n\n# Mixed Type Subtraction\na = 2\nb = 1.2\nresult = a - b\nprint(result) \n\nresult = b - a\nprint(result)\n\n0.8\n-0.8\n\n\n\n\n6.2.3 Division (/)\nThe division operator is used to divide one number by another. In Python, it always returns a float value, even if the result is a whole number.\n\n# Integer division\na = 10\nb = 5\nresult = a / b\nprint(result)  #(Note that it's a float)\n\n# Float division\nx = 10.5\ny = 4.3\nresult = x / y\nprint(result) \n\n2.0\n2.441860465116279\n\n\n\n\n6.2.4 Floor Division (//)\nThe floor division operator returns the largest integer less than or equal to the result of division. It essentially rounds down the result.\n\n# Integer floor division\na = 10\nb = 3\nresult = a // b\nprint(result)  \n\n# Float floor division\nx = 10.5\ny = 4.3\nresult = x // y\nprint(result)  \n\n3\n2.0\n\n\n\n\n6.2.5 Modulus (%)\nThe modulus operator returns the remainder of the division of two numbers. This is useful for determining if a number is divisible by another or for wrapping around values in cyclic operations (like circular buffers).\n\n# Integer modulus\na = 10\nb = 3\nresult = a % b\nprint(result)  # 10 divided by 3 leaves a remainder of 1\n\n# Float modulus\nx = 10.5\ny = 4.3\nresult = x % y\nprint(result)  # 10.5 divided by 4.3 leaves a remainder of 1.9\n\n1\n1.9000000000000004\n\n\n\n\n6.2.6 Exponentiation (**)\nThe exponentiation operator raises the first number to the power of the second number.\n\n# Integer exponentiation\na = 2\nb = 3\nresult = a ** b # 2 raised to the power of 3\nprint(result)  \n\n# Float exponentiation\nx = 2.5\ny = 5.5\nresult = x ** y # 2.5 raised to the power of 5.5\nprint(result)  \n\n# Mixed exponentiation\na = 3\nb = 2.5\nresult = a ** b # (3 raised to the power of 2.5)\nprint(result)\n\n8\n154.40808887540913\n15.588457268119896\n\n\n\n\n6.2.7 Operator Precedence – The Order of Operations\nIn Python, like in regular mathematics, arithmetic operators have an order in which they are evaluated. This order is crucial for understanding how complex expressions are computed. While we will focus on arithmetic operators for now, keep in mind that the order of operations applies to all operators in Python, and we’ll revisit it as we explore more complex operations later in the book.\nHere is the order of precedence for the basic arithmetic operators:\n\nExponentiation (**)\nThe exponentiation operator is evaluated first. It raises a number to the power of another.\nMultiplication (*), Division (/), Floor Division (//), Modulus (%)\nThese operators are evaluated next, from left to right.\nAddition (+), Subtraction (-)\nFinally, addition and subtraction are evaluated, also from left to right.\n\n\n6.2.7.1 Example of Operator Precedence\nLet’s see how this works in action:\nresult = 3 + 2 * 5 - 10 / 2\nprint(result)\n\n\n6.2.7.2 Here’s how the expression is evaluated:\n\nFirst, 2 * 5 is computed (multiplication).\nThen, 10 / 2 is computed (division).\nNext, the addition and subtraction are performed from left to right: 3 + (result of multiplication) and then subtracting the division result. Thus, the order is followed strictly as per the rules of precedence, and the result will be 10.0.\n\n\n\n6.2.7.3 Parentheses Override the Precedence\nYou can control the order of operations in your code by using parentheses () to change the default precedence. Anything inside parentheses is computed first.\n\nresult = (3 + 2) * (5 - 10 / 2)\nprint(result)\n\n0.0\n\n\nHere, the addition and subtraction are computed first due to parentheses, followed by multiplication and division.\n\n\n\n\n\n\nImportant\n\n\n\nThis section introduces the general order of arithmetic operations in Python. As we advance and introduce more operators, you’ll need to remember that operator precedence determines how expressions are evaluated, and we will come back to this concept when we cover more complex topics in the book.\n\n\n\n\n\n6.2.8 Using e in Arithmetic Operations\nIn Python, the letter e is often used in scientific notation to represent powers of 10. It is not an operator, but rather a part of a number written in exponential form. The e can be used in arithmetic operations just like any other number. The expression 2e3 means ( 2 ^3 ), which is equal to 2000.\n\n6.2.8.1 Example:\n# Using e for scientific notation\nresult = 2e3  # 2 * 10^3 = 2000\nprint(result)\n\n\n6.2.8.2 Combining e with other Arithmetic Operators\nYou can also perform arithmetic operations with numbers written in scientific notation. Let’s see how this works with different operators:\n\n# Adding, subtracting, multiplying and dividing with e notation\nadd_result = 2e3 + 5e2  # Adding 2000 + 500\nsub_result = 5e3 - 1e3  # Subtracting 5000 - 1000\nmul_result = 3e2 * 4e1  # Multiplying 300 * 40\ndiv_result = 1e4 / 2e2  # Dividing 10000 / 200\nsmall_value = 1e-4  # A small value, equivalent to 0.0001\n\nprint(\"Addition:\", add_result)    \nprint(\"Subtraction:\", sub_result)\nprint(\"Multiplication:\", mul_result) \nprint(\"Division:\", div_result)  \nprint(\"Small value:\", small_value)  \n\nAddition: 2500.0\nSubtraction: 4000.0\nMultiplication: 12000.0\nDivision: 50.0\nSmall value: 0.0001\n\n\n\n\n6.2.8.3 Exponentiation with e\nWhen used with exponentiation (**), e represents powers of 10, and the operation behaves like normal arithmetic:\n\nexp_result = 2e3 ** 2  # 2000^2\nprint(exp_result)\n\n4000000.0\n\n\n\n\n6.2.8.4 Why Use e?\nUsing e allows us to easily handle large or small numbers without typing out all the zeros. It’s especially helpful in scientific and engineering calculations where such numbers frequently occur.\n\n\n\n6.2.9 Summary of Arithmetic Operators\nIn this chapter, we explored the core arithmetic operators in Python and how they are used to perform calculations.\n\n6.2.9.1 Key Points\n\nOrder of Operations: Python follows a specific order of precedence when evaluating arithmetic expressions. Exponentiation (**) is evaluated first, followed by multiplication, division, floor division, and modulus, and finally, addition and subtraction. Parentheses can be used to control the order of evaluation.\nUsing e in Arithmetic: We also discussed how e is used in Python to represent numbers in scientific notation (e.g., 2e3 represents 2000). We demonstrated how to perform arithmetic with scientific notation and how e can be combined with other operators like addition, subtraction, multiplication, division, and exponentiation.\n\n\n\n6.2.9.2 Arithmetic Operators Table\n\n\n\n\n\n\n\n\n\nOperator\nDescription\nExample\nOutput\n\n\n\n\n+\nAddition: Adds two operands.\n5 + 3\n8\n\n\n-\nSubtraction: Subtracts the second operand from the first.\n5 - 3\n2\n\n\n*\nMultiplication: Multiplies two operands.\n5 * 3\n15\n\n\n/\nDivision: Divides the first operand by the second. Returns float.\n5 / 3\n1.6667...\n\n\n//\nFloor Division: Divides and returns the largest integer less than or equal to the result.\n5 // 3\n1\n\n\n%\nModulus: Returns the remainder of a division operation.\n5 % 3\n2\n\n\n**\nExponentiation: Raises the first operand to the power of the second.\n2 ** 3\n8\n\n\n\n\n\n6.2.9.3 Important Notes:\n\nInteger Division (//) always returns the largest whole number less than or equal to the result of division.\nModulus (%) can be used to check divisibility and is commonly used in algorithms like checking if a number is even or odd.\nExponentiation (**) is often used for calculating powers, square roots, and mathematical functions.\n\n\n\n6.2.9.4 Next Steps\nAs you continue to experiment with these operators, remember that these foundational concepts will help you tackle more advanced topics later in the book. You will explore more operators and complex expressions as we build on this knowledge.\n\n\n\n\n\n\nTip\n\n\n\nFeel free to modify the examples and experiment with different operations. Create your own expressions and see how Python handles them. The more you play with these operators, the more comfortable you will become using them in real-world applications.",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#arithmetic-operators--",
+    "href": "chapter5.html#arithmetic-operators--",
+    "title": "6  Basic Operators in Python",
+    "section": "7.1 Arithmetic operators (+, -, *, /)",
+    "text": "7.1 Arithmetic operators (+, -, *, /)",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#comparison-and-logical-operators",
+    "href": "chapter5.html#comparison-and-logical-operators",
+    "title": "6  Basic Operators in Python",
+    "section": "7.2 Comparison and logical operators",
+    "text": "7.2 Comparison and logical operators",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#taking-user-input-with-input",
+    "href": "chapter5.html#taking-user-input-with-input",
+    "title": "6  Basic Operators in Python",
+    "section": "7.3 Taking user input with input()",
+    "text": "7.3 Taking user input with input()",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#project-1-simple-temperature-converter",
+    "href": "chapter5.html#project-1-simple-temperature-converter",
+    "title": "6  Basic Operators in Python",
+    "section": "7.4 Project 1: Simple Temperature Converter",
+    "text": "7.4 Project 1: Simple Temperature Converter",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#convert-between-celsius-fahrenheit-and-kelvin",
+    "href": "chapter5.html#convert-between-celsius-fahrenheit-and-kelvin",
+    "title": "6  Basic Operators in Python",
+    "section": "7.5 Convert between Celsius, Fahrenheit, and Kelvin",
+    "text": "7.5 Convert between Celsius, Fahrenheit, and Kelvin",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#use-input-from-the-user-and-perform-arithmetic-operations",
+    "href": "chapter5.html#use-input-from-the-user-and-perform-arithmetic-operations",
+    "title": "6  Basic Operators in Python",
+    "section": "7.6 Use input from the user and perform arithmetic operations",
+    "text": "7.6 Use input from the user and perform arithmetic operations",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter5.html#format-and-display-the-result",
+    "href": "chapter5.html#format-and-display-the-result",
+    "title": "6  Basic Operators in Python",
+    "section": "7.7 Format and display the result",
+    "text": "7.7 Format and display the result",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Basic Operators in Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapter6.html",
+    "href": "chapter6.html",
+    "title": "7  ty",
+    "section": "",
+    "text": "8 Basic Input and Output",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>ty</span>"
+    ]
+  },
+  {
+    "objectID": "chapter6.html#taking-user-input-with-input",
+    "href": "chapter6.html#taking-user-input-with-input",
+    "title": "7  ty",
+    "section": "8.1 Taking user input with input()",
+    "text": "8.1 Taking user input with input()",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>ty</span>"
+    ]
+  },
+  {
+    "objectID": "chapter6.html#project-1-simple-temperature-converter",
+    "href": "chapter6.html#project-1-simple-temperature-converter",
+    "title": "7  ty",
+    "section": "8.2 Project 1: Simple Temperature Converter",
+    "text": "8.2 Project 1: Simple Temperature Converter",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>ty</span>"
+    ]
+  },
+  {
+    "objectID": "chapter6.html#convert-between-celsius-fahrenheit-and-kelvin",
+    "href": "chapter6.html#convert-between-celsius-fahrenheit-and-kelvin",
+    "title": "7  ty",
+    "section": "8.3 Convert between Celsius, Fahrenheit, and Kelvin",
+    "text": "8.3 Convert between Celsius, Fahrenheit, and Kelvin",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>ty</span>"
+    ]
+  },
+  {
+    "objectID": "chapter6.html#use-input-from-the-user-and-perform-arithmetic-operations",
+    "href": "chapter6.html#use-input-from-the-user-and-perform-arithmetic-operations",
+    "title": "7  ty",
+    "section": "8.4 Use input from the user and perform arithmetic operations",
+    "text": "8.4 Use input from the user and perform arithmetic operations",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>ty</span>"
+    ]
+  },
+  {
+    "objectID": "chapter6.html#format-and-display-the-result",
+    "href": "chapter6.html#format-and-display-the-result",
+    "title": "7  ty",
+    "section": "8.5 Format and display the result",
+    "text": "8.5 Format and display the result",
+    "crumbs": [
+      "Part 1 - Getting Started",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>ty</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "8  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
     ]
   }
 ]
